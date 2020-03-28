@@ -5,7 +5,7 @@ title: Real-Time Data Collection
 We have collected real-data provided by the California Department of Transportation, and  the California Highway Patrol, during the month of January 2020 in North direction of the I-405 freeway in the Los Angeles County. 
 
 <p align="center">
-  <img src="../images/g_map1.png" height="100" width="100">
+  <img src="../images/g_map1.png" height="200" width="200">
  </p>
     
 
