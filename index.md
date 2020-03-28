@@ -6,7 +6,7 @@ layout: default
 
 [Link to another page](./another-page.html).
 
-#Introduction 
+# Introduction 
 
 This project focuses on near real–time accurate recognition of freeway accidents using speed data measured from
 speed sensors located across the freeway. Due to the significant impact of road accidents on health and development,
@@ -18,7 +18,7 @@ billion gallons of fuel for a congestion cost of $166 billion.
 
 
 The goal of this project is to detect accidents in near real–time using informative features hidden in noisy speed
-observations. Specifically, our proposed method constitutes three stages: i) feature extraction: we extract both time
-domain and frequency domain features from speed observations, ii) feature selection: we select a subset of features
-after removing redundant and irrelevant features for accident detection, and iii) optimum classification: we derive
-optimum classification rule to detect accidents.
+observations. Specifically, our proposed method constitutes three stages: 
+1. feature extraction: we extract both time domain and frequency domain features from speed observations, 
+2. feature selection: we select a subset of features after removing redundant and irrelevant features for accident detection, and 
+3. optimum classification: we derive optimum classification rule to detect accidents.
