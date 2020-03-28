@@ -17,6 +17,16 @@ We have collected real-data provided by the California Department of Transportat
   - Reported time of the accident
   - Duration of the accident
   - Accident location
+  
+  To handle missing data, we have used a liner-interpolation filter. 
+
+# Data Processing and Visualizing
+
+The below figure shows proceesed speed data corresponding to an accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. 
+
+![Sample Acc](../images/sample_acc.png)
+
+In this figure, solid lines represent speed readings from upstream sensors, while dashed lines represents speed readings from downstream sensors.  
 
 
 [Back](../)
