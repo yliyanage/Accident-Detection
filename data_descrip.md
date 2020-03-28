@@ -11,10 +11,12 @@ directions. For a given sensor, a speed reading is provided for each 5 minutes e
 such as sensor location, time and date of the speed reading, and freeway direction (i.e., North or South). Fig. 1
 shows speed data from I405 freeway North direction observed at 8.45 am on 08th March 2020.
 
+![Speed Data](./images/speed.png)
+
 ### Accidents Data: 
 Details of accidents include the start time of the accident, the duration, a description of the accident type, the freeway direction (i.e., North or South) and the accident location in terms of absolute post mile. In general, the reported accident time constitutes a delayed version of the actual time that the accident took place. Fig. 2 shows events reported on I405 Freeway North direction from 5 a.m. to 10 a.m. on 08th March 2020.
 
-![Speed Data](./images/speed.png)
+![Accidents Details](./images/accidents.png)
 
 
 [back](./)
