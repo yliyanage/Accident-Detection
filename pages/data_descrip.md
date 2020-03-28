@@ -19,4 +19,4 @@ Details of accidents include the start time of the accident, the duration, a des
 ![Accidents Details](../images/accidents.png)
 
 
-[back](./)
+[Back](../)
