@@ -12,7 +12,7 @@ The goal of this project is to detect accidents in near real–time using inform
 
 ![Overview](./images/overview.png)
 
-[1. Description of Data](./data_descrip.html)
+[1. Description of Data](./pages/data_descrip.html)
 
 [2. Real-Time Data Collection](./data_collect.html)
 
