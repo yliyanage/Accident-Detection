@@ -9,8 +9,7 @@ This project focuses on near real–time accurate recognition of freeway acciden
 
 
 The goal of this project is to detect accidents in near real–time using informative features hidden in noisy speed observations. Specifically, our proposed method constitutes three stages: 
-1. feature extraction: we extract both time domain and frequency domain features from speed observations, 
-2. feature selection: we select a subset of features after removing redundant and irrelevant features for accident detection, and 
-3. optimum classification: we derive optimum classification rule to detect accidents.
+
+![Overveiw](./images/overveiw.png)
 
 [- Description of Data](./data_descrip.html).
