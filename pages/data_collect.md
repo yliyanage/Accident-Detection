@@ -22,7 +22,7 @@ We have collected real-data provided by the California Department of Transportat
 
 # Data Processing and Visualizing
 
-The below figure shows speed data corresponding to an accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. 
+The below figure shows speed data from an accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. 
 
 ![Sample Acc](../images/sample_acc.png)
 
