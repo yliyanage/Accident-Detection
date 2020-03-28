@@ -10,6 +10,6 @@ This project focuses on near real–time accurate recognition of freeway acciden
 
 The goal of this project is to detect accidents in near real–time using informative features hidden in noisy speed observations. Specifically, our proposed method constitutes three stages: 
 
-![Overveiw](./images/overveiw.png)
+![Overview](./images/overview.png)
 
 [- Description of Data](./data_descrip.html).
