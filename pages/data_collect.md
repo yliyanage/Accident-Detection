@@ -4,7 +4,10 @@ title: Real-Time Data Collection
 ---
 We have collected real-data provided by the California Department of Transportation, and  the California Highway Patrol, during the month of January 2020 in North direction of the I-405 freeway in the Los Angeles County. 
 
-![G_maps](../images/g_map.png)
+<p align="center">
+  <img src="../images/g_map.png">
+ </p>
+    
 
 1. Speed Dataset:  We have created a big-dataset comprising of 1,446,196 speed readings collected from all 162 sensors.
   - Sampling time = 5 minutes
