@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Link to another page](./another-page.html).
+
 
 # Introduction 
 
@@ -14,4 +14,4 @@ The goal of this project is to detect accidents in near real–time using inform
 2. feature selection: we select a subset of features after removing redundant and irrelevant features for accident detection, and 
 3. optimum classification: we derive optimum classification rule to detect accidents.
 
-
+[Link to another page](./another-page.html).
