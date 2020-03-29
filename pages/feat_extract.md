@@ -8,9 +8,6 @@ Various informative (time domain and frequency domain) features can be extracted
 # Time-Domain Features
 
 We conisder 11 time-domain features:
-```
-i) Mean, ii) Median, iii) Standard deviation, iv) Root mean square, v) Energy, vi) Inter Quartile Range, vii) Mean Absolute Deviation, viii) Skewness, ix) Kurtosis, x) Mean of Maxima, and xi) Mean of Minima. 
-```
 <pre>
 1. Mean                             7. Mean Absolute Deviation
 2. Median                           8. Skewness
