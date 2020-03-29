@@ -13,6 +13,6 @@ i) Mean, ii) Median, iii) Standard deviation, iv) Root mean square, v) Energy, v
 
 All features are computed via a rolling window approach. For example, feature mean is computed as follows:
 
- ![Eq1 alt <](../images/eq1.png) <!-- .element height="50%" width="50%" -->
+ ![Eq1](../images/eq1.png) <-- .element height="50%" width="50%" -->
 
 [Back](../)
