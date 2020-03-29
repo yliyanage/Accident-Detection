@@ -13,8 +13,6 @@ i) Mean, ii) Median, iii) Standard deviation, iv) Root mean square, v) Energy, v
 
 All features are computed via a rolling window approach, e.g., for feature mean,
 
- {% raw %}
-  $$a^2 + b^2 = c^2$$ 
- {% endraw %}
+ ![Eq1 alt <](../images/eq1.png)
 
 [Back](../)
