@@ -11,8 +11,8 @@ We conisder 11 time-domain features:
 
 i) Mean, ii) Median, iii) Standard deviation, iv) Root mean square, v) Energy, vi) Inter Quartile Range, vii) Mean Absolute Deviation, viii) Skewness, ix) Kurtosis, x) Mean of Maxima, and xi) Mean of Minima. 
 
-All features are computed via a rolling window approach, e.g., for feature mean,
+All features are computed via a rolling window approach. For example, feature mean is computed as follows:
 
- ![Eq1 alt <](../images/eq1.png =250x)
+ ![Eq1 alt <](../images/eq1.png =100x20)
 
 [Back](../)
