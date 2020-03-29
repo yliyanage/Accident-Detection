@@ -13,6 +13,8 @@ i) Mean, ii) Median, iii) Standard deviation, iv) Root mean square, v) Energy, v
 
 All features are computed via a rolling window approach, e.g., for feature mean,
 
-$Z_{k}^i = \left( \sum_{j=0}^{S-1} Y_{k-j}^i \right )/{S}$
+ {% raw %}
+  $$a^2 + b^2 = c^2$$ 
+ {% endraw %}
 
 [Back](../)
