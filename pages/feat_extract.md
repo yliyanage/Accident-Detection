@@ -13,6 +13,6 @@ i) Mean, ii) Median, iii) Standard deviation, iv) Root mean square, v) Energy, v
 
 All features are computed via a rolling window approach, e.g., for feature mean,
 
- ![Eq1 alt <](../images/eq1.png)
+ ![Eq1 alt <](../images/eq1.png =250x)
 
 [Back](../)
