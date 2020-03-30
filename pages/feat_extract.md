@@ -26,7 +26,7 @@ All features are computed via a rolling window approach. For example, feature me
  
  
  <p align="center">
-  <img src="../images/time_feat.png" height="1000" width="1000">
+  <img src="../images/time_feat.png" height="1000" width="1200">
  </p>
 
 [Back](../)
