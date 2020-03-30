@@ -23,7 +23,7 @@ All features are computed via a rolling window approach. For example, feature me
   <img src="../images/eq1.png" height="200" width="310">
  </p>
  
-The below figure shows the time-domain features extracted from the speed reading related to the accident that reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. [See Figure](./data_collect.html)
+The below figure shows the extracted time-domain features for the the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
  
  <p align="center">
   <img src="../images/time_feat.png">
