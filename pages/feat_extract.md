@@ -22,5 +22,11 @@ All features are computed via a rolling window approach. For example, feature me
  <p align="left">
   <img src="../images/eq1.png" height="200" width="310">
  </p>
+ 
+ 
+ 
+ <p align="center">
+  <img src="../images/time_feat.png" height="1000" width="1000">
+ </p>
 
 [Back](../)
