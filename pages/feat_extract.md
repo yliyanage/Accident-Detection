@@ -26,12 +26,12 @@ where $Z_k$ is the feature at time $k$, $Y_k$ is the speed reading at time $k$, 
 
  
 The below figure shows the extracted time-domain features for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
+
+# Frequency-Domain Features
  
  ![feat](../images/time_feat.png)
  
- # Frequency-Domain Features
- 
- Discrete Fourier Transform
+ 1. Discrete Fourier Transform
  
  We compute the discrete fourier transform by consider a rolling window of size $N$ as follows:
  
