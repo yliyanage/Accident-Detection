@@ -7,7 +7,7 @@ Various informative (time domain and frequency domain) features can be extracted
 
 # Time-Domain Features
 
-We conisder 11 time-domain features:
+We consider 11 time-domain features:
 <pre>
 1. Mean                             7. Mean Absolute Deviation
 2. Median                           8. Skewness
