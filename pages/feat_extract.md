@@ -38,7 +38,7 @@ The below figure shows the extracted time-domain features for the accident repor
  
  Since the speed observations are real values, we get a symmetric spectrum aroung S/2. Hence, we consider the d.c. component, i.e., the zero frequency component, the fundermental frequency component and all its harmonics up to S/2 as features at time k. 
  
-Further, to speed-up the process of computing these features, we utilize a fast-fourier transofrm algorithm to compute discrete fourier transform, which results in reducing the number of computations from $\mathcal(O)(S^2)$ to O(Slog(S)). 
+Further, to speed-up the process of computing these features, we utilize a fast-fourier transofrm algorithm to compute discrete fourier transform, which results in reducing the number of computations from $\mathcal(O)(S^2)$ to $O(Slog(S))$. 
 
 $S^2$
 
