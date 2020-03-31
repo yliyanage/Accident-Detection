@@ -18,7 +18,7 @@ We conisder 11 time-domain features:
 </pre>
 
 
-These features are computed via a rolling window approach. For example, feature mean is computed as follows:
+These features are computed via a rolling window approach. For example, feature ''Mean'' is computed as follows:
 
 $$ Z_k = \frac{\sum_{i=0}^{N-1} Y_{k-i}}{N}, $$
 
