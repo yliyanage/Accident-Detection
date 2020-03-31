@@ -21,6 +21,6 @@ The goal of this project is to detect accidents in near real–time using inform
 
 [4. Feature Selection](./pages/feat_select.html)
 
-[5. Classification](./classify.html)
+[5. Classification](./pages/classify.html)
 
 
