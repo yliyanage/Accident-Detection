@@ -40,6 +40,6 @@ The below figure shows the extracted time-domain features for the accident repor
  
 Further, to speed-up the process of computing these features, we utilize a fast-fourier transofrm algorithm to compute discrete fourier transform, which results in reducing the number of computations from O(S^2) to O(Slog(S)). 
 
-$$ S^2$$
+$S^2$
  
 [Back](../)
