@@ -25,7 +25,7 @@ $$ Z_k = \frac{\sum_{i=0}^{N-1} Y_{k-i}}{N}, $$
 where $Z_k$ is the feature at time $k$, $Y_k$ is the speed reading at time $k$, and $N$ is the window length. 
 
  
-The below figure shows the extracted time-domain features for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
+The below figure shows the extracted time-domain features when N=5, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
 
  ![feat](../images/time_feat.png)
  
@@ -44,6 +44,9 @@ where $Y_k$ is the speed reading at time $k$, $F[n]$ is the $n$ is frequency com
 Since the speed observations are real values, we get a symmetric spectrum aroung $N/2$. Hence, we consider the d.c. component or the zero frequency component $F[0]$, the fundermental frequency component $F[1]$ and all its harmonics up to $F[N/2]$ as features at time $k$. 
  
 Further, to speed-up the process of computing these features, we utilize a fast-fourier transofrm algorithm to compute discrete fourier transform, which results in reducing the number of computations from $\mathcal{O}(S^2)$ to $\mathcal{O}(Slog(S))$. 
+
+2. Karhunen-Loeve Transform (Eigenvector Transform)
+
 
  
 [Back](../)
