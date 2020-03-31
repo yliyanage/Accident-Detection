@@ -58,5 +58,6 @@ The below figure shows the extracted time-domain features when N=5, for the acci
 
    Note that each eigenvector $q_{i}$ can be viewed as coefficients of a Finite Impulse Response (FIR) digital filter and thus, $S_{i}^k$ is the output of the filter realized by $q_{i}$.
  
- 
+   ![kle](../images/kle.png)
+   
 [Back](../)
