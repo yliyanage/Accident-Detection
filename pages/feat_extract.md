@@ -37,7 +37,7 @@ The below figure shows the extracted time-domain features for the accident repor
  
 We compute the discrete fourier transform by consider a rolling window of size $N$ as follows:
  
-$$ F[n] = \sum_{i=0}^{N-1} Y_{k-i} e^{-j\frac{2\pi}{N}ni$$
+$$ F[n] = \sum_{i=0}^{N-1} Y_{k-i} e^{-j\frac{2\pi}{N}ni} $$
 
 Since the speed observations are real values, we get a symmetric spectrum aroung $N/2$. Hence, we consider the d.c. component or the zero frequency component $F[0]$, the fundermental frequency component $F[1]$ and all its harmonics up to $F[N/2]$ as features at time $k$. 
  
