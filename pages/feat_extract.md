@@ -36,7 +36,14 @@ The below figure shows the extracted time-domain features for the accident repor
  We compute the discrete fourier transform by consider a rolling window of size S as follows:
  
  
- Since the speed observations are real values, we get a symmetric spectrum aroung S/2. Hence, we consider the d.c. (zero /frequency) component, the fundermental frequency component and all its harmonics up to S/2 as features. 
+ Since the speed observations are real values, we get a symmetric spectrum aroung S/2. Hence, we consider the d.c. component, i.e., the zero frequency component, the fundermental frequency component and all its harmonics up to S/2 as features at time k. 
  
+Further, to speed-up the process of computing these features, we utilize a fast-fourier transofrm algorithm to compute discrete fourier transform, which results in reducing the number of computations from O(S^2) to O(Slog(S)). 
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+$$ S^2$$
  
 [Back](../)
