@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Real-Time Data Collection
+title: Real-Time Data Collection and Processing
 ---
 We have collected real-data provided by the California Department of Transportation, and  the California Highway Patrol, during the month of January 2020 in North direction of the I-405 freeway in the Los Angeles County. 
 
@@ -18,11 +18,11 @@ We have collected real-data provided by the California Department of Transportat
   - Duration of the accident
   - Accident location
   
-Note that to handle missing samples, we have used a liner-interpolation filter. 
+
 
 # Data Processing and Visualizing
 
-The below figure shows speed data from an accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. 
+During data processing, we utilize a liner interpolation filter to handle missing samples.  The below figure shows speed data from an accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. 
 
 ![Sample Acc](../images/sample_acc.png)
 
