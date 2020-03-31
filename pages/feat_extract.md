@@ -30,7 +30,7 @@ The below figure shows the extracted time-domain features for the accident repor
  </p>
  
  
- # Frequency-Domain Feature
+ ## Frequency-Domain Features
  
  
  1. Discrete Fourier Transform
