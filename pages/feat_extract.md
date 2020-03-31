@@ -25,7 +25,7 @@ $$ Z_k = \frac{\sum_{i=0}^{N-1} Y_{k-i}}{N}, $$
 where $Z_k$ is the feature at time $k$, $Y_k$ is the speed reading at time $k$, and $N$ is the window length. 
 
  
-The below figure shows the extracted time-domain features when N=5, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
+The below figure shows the extracted time-domain features when $N=5$, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
 
 ![feat](../images/time_feat1.png)
  
@@ -44,7 +44,7 @@ The below figure shows the extracted time-domain features when N=5, for the acci
 
    Further, to speed-up the process of computing these features, we utilize a fast-fourier transform algorithm, i.e., Cooley-Tukey algorithm to compute discrete fourier transform, which reduce the number of computations from $\mathcal{O}(N^2)$ to $\mathcal{O}(Nlog(N))$. 
    
-   The below figure shows the extracted frequency components (magnitudes) when N=5, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
+   The below figure shows the extracted frequency components (magnitudes) when $N=5$, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
 
   <p align="center">
    <img src="../images/dft.png" height="220" width="600">
@@ -62,7 +62,7 @@ The below figure shows the extracted time-domain features when N=5, for the acci
 
    Note that each eigenvector $q_{i}$ can be viewed as coefficients of a Finite Impulse Response (FIR) digital filter and thus, $S_{i}^k$ is the output of the filter realized by $q_{i}$.
    
-   The below figure shows the extracted subspace components when N=5, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
+   The below figure shows the extracted subspace components when $N=5$, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
  
    <p align="center">
   	 <img src="../images/kle.png" height="440" width="600">
