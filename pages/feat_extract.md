@@ -23,10 +23,20 @@ All features are computed via a rolling window approach. For example, feature me
   <img src="../images/eq1.png" height="200" width="310">
  </p>
  
-The below figure shows the extracted time-domain features for the the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
+The below figure shows the extracted time-domain features for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
  
  <p align="center">
   <img src="../images/time_feat.png">
  </p>
-
+ 
+ # Frequency-Domain Feature
+ 
+ 1. Discrete Fourier Transform
+ 
+ We compute the discrete fourier transform by consider a rolling window of size S as follows:
+ 
+ 
+ Since the speed observations are real values, we get a symmetric spectrum aroung S/2. Hence, we consider the d.c. (zero /frequency) component, the fundermental frequency component and all its harmonics up to S/2 as features. 
+ 
+ 
 [Back](../)
