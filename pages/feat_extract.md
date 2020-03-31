@@ -35,7 +35,7 @@ The below figure shows the extracted time-domain features when N=5, for the acci
 
 1. Discrete Fourier Transform
  
-We compute the discrete fourier transform by consider a rolling window of size $N$ as follows:
+We compute the discrete fourier transform by consider a rolling window of size $N$ at each time instant $k$ as follows:
  
 $$ F[n] = \sum_{i=0}^{N-1} Y_{k-i} e^{-j\frac{2\pi}{N}ni}, $$
 
@@ -43,7 +43,7 @@ where $Y_k$ is the speed reading at time $k$, $F[n]$ is the $n$ is frequency com
 
 Since the speed observations are real values, we get a symmetric spectrum aroung $N/2$. Hence, we consider the d.c. component or the zero frequency component $F[0]$, the fundermental frequency component $F[1]$ and all its harmonics up to $F[N/2]$ as features at time $k$. 
  
-Further, to speed-up the process of computing these features, we utilize a fast-fourier transofrm algorithm to compute discrete fourier transform, which results in reducing the number of computations from $\mathcal{O}(S^2)$ to $\mathcal{O}(Slog(S))$. 
+Further, to speed-up the process of computing these features, we utilize a fast-fourier transform algorithm, i.e., Cooley-Tukey algorithm to compute discrete fourier transform, which results in reducing the number of computations from $\mathcal{O}(S^2)$ to $\mathcal{O}(Slog(S))$. 
 
 2. Karhunen-Loeve Transform (Eigenvector Transform)
 
