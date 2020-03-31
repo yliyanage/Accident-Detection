@@ -65,7 +65,7 @@ The below figure shows the extracted time-domain features when N=5, for the acci
    The below figure shows the extracted subspace components when N=5, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
  
    <p align="center">
-  	 <img src="../images/kle.png" height="700" width="700">
+  	 <img src="../images/kle.png" height="440" width="600">
    </p>
    
 [Back](../)
