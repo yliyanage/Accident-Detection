@@ -18,7 +18,7 @@ We conisder 11 time-domain features:
 </pre>
 
 
-All features are computed via a rolling window approach. For example, feature mean is computed as follows:
+These features are computed via a rolling window approach. For example, feature mean is computed as follows:
 
 $$ Z_k = \frac{\sum_{i=0}^{N-1} Y_{k-i}}{N}, $$
 
@@ -49,11 +49,11 @@ Further, to speed-up the process of computing these features, we utilize a fast-
 
 The Karhunen Lo\'eve Expansion (KLE) decompose a time-domain signal into uncorrelated spectral components to highlight its unique frequency domain characteristics. 
 
-Let $Y^k =[Y_{k},Y_{k-1},\dots,Y_{k-N-1}$] be the rolling window at time $k$. Consider $q_{0},q_{1},\dots,q_{N-1}$ to be the eigen vectors of the $N \times N$ autocorrelation matrix corresponding to $Y^k$. Then the KLE of the signal $Y^k$ is given by,
+Let $Y^k =[Y_{k},Y_{k-1},\dots,Y_{k-N-1}$] be the rolling window at time $k$. Consider $\{q_{0},q_{1},\dots,q_{N-1}\}$ to be the eigen vectors of the $N \times N$ autocorrelation matrix corresponding to $Y^k$. Then the KLE of the signal $Y^k$ is given by,
 
 $$ Y^k =\sum_{i=0}^{N-1} q_{i}^{T} Y^k q_{i}.$$
 
-Thus, signal $Y^k$ is decomposed into $N$ mutually uncorrelated spectral components $y_{0}^k, y_{1}^k,\dots,y_{N-1}^k$, where $y_{i}^k= q_{i}^{T} Y^k q_{i}$. These uncorrelated spectral components are called the subspace components of the signal $Y^k$. 
+Thus, signal $Y^k$ is decomposed into $N$ mutually uncorrelated spectral components $S_{0}^k, S_{1}^k,\dots,S_{N-1}^k$, where $y_{i}^k= q_{i}^{T} Y^k q_{i}$. These uncorrelated spectral components are called the subspace components of the signal $Y^k$. We consider all these subspace components as features at time $k$. 
 
 Note that each eigenvector $q_{i}$ can be viewed as coefficients of a Finite Impulse Response (FIR) digital filter and thus, $y_{i}^k$ is the output of the filter realized by $q_{i}$.
  
