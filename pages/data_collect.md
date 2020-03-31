@@ -18,7 +18,7 @@ We have collected real-data provided by the California Department of Transportat
   - Duration of the accident
   - Accident location
   
-Note that to handle missing data, we have used a liner-interpolation filter. 
+Note that to handle missing samples, we have used a liner-interpolation filter. 
 
 # Data Processing and Visualizing
 
