@@ -27,16 +27,17 @@ where $Z_k$ is the feature at time $k$, $Y_k$ is the speed reading at time $k$, 
  
 The below figure shows the extracted time-domain features for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
 
-# Frequency-Domain Features
- 
  ![feat](../images/time_feat.png)
  
- 1. Discrete Fourier Transform
  
- We compute the discrete fourier transform by consider a rolling window of size $N$ as follows:
+# Frequency-Domain Features
  
+
+1. Discrete Fourier Transform
  
- Since the speed observations are real values, we get a symmetric spectrum aroung $N/2$. Hence, we consider the d.c. component, i.e., the zero frequency component, the fundermental frequency component and all its harmonics up to $N/2$ as features at time $k$. 
+We compute the discrete fourier transform by consider a rolling window of size $N$ as follows:
+ 
+Since the speed observations are real values, we get a symmetric spectrum aroung $N/2$. Hence, we consider the d.c. component, i.e., the zero frequency component, the fundermental frequency component and all its harmonics up to $N/2$ as features at time $k$. 
  
 Further, to speed-up the process of computing these features, we utilize a fast-fourier transofrm algorithm to compute discrete fourier transform, which results in reducing the number of computations from $\mathcal{O}(S^2)$ to $\mathcal{O}(Slog(S))$. 
 
