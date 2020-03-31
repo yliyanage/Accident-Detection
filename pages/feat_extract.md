@@ -17,7 +17,10 @@ We conisder 11 time-domain features:
 6. Inter Quartile Range
 </pre>
 
+
 All features are computed via a rolling window approach. For example, feature mean is computed as follows:
+
+# Frequency-Domain Features
 
 $$ Z_k = \frac{\sum_{i=0}^{N-1} Y_{k-i}}{N}, $$
 
@@ -30,7 +33,7 @@ The below figure shows the extracted time-domain features for the accident repor
  </p>
  
  
- ## Frequency-Domain Features
+ # Frequency-Domain Features
  
  
  1. Discrete Fourier Transform
