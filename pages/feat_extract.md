@@ -47,7 +47,7 @@ The below figure shows the extracted time-domain features when N=5, for the acci
    The below figure shows the extracted frequency components (magnitudes) when N=5, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
 
   <p align="center">
-   <img src="../images/dft.png" height="200" width="600">
+   <img src="../images/dft.png" height="220" width="600">
   </p>
 
 2. Karhunen Lo\'eve Expansion (Eigenvector Transform)
@@ -65,7 +65,7 @@ The below figure shows the extracted time-domain features when N=5, for the acci
    The below figure shows the extracted subspace components when N=5, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
  
    <p align="center">
-  	 <img src="../images/kle.png" height="1000" width="1000">
+  	 <img src="../images/kle.png" height="700" width="700">
    </p>
    
 [Back](../)
