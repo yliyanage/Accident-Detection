@@ -35,7 +35,7 @@ The below figure shows the extracted time-domain features when N=5, for the acci
 
 1. Discrete Fourier Transform
  
-We compute the discrete fourier transform by consider a rolling window of size $N$ at each time instant $k$ as follows:
+We compute the discrete fourier transform by consider a rolling window of size $N$ at each time $k$ as follows:
  
 $$ F[n] = \sum_{i=0}^{N-1} Y_{k-i} e^{-j\frac{2\pi}{N}ni}, $$
 
