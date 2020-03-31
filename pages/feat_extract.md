@@ -31,7 +31,7 @@ The below figure shows the extracted time-domain features for the accident repor
  
  # Frequency-Domain Features
  
- 1. Discrete Fourier Transform
+ Discrete Fourier Transform
  
  We compute the discrete fourier transform by consider a rolling window of size $N$ as follows:
  
