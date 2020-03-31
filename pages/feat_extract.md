@@ -44,6 +44,7 @@ The below figure shows the extracted time-domain features when N=5, for the acci
 
    Further, to speed-up the process of computing these features, we utilize a fast-fourier transform algorithm, i.e., Cooley-Tukey algorithm to compute discrete fourier transform, which reduce the number of computations from $\mathcal{O}(N^2)$ to $\mathcal{O}(Nlog(N))$. 
 
+   ![dft](../images/dft.png)
 
 2. Karhunen Lo\'eve Expansion (Eigenvector Transform)
 
