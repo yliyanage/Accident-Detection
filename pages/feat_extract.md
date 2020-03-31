@@ -32,24 +32,23 @@ The below figure shows the extracted time-domain features when N=5, for the acci
  
 # Frequency-Domain Features
  
-
-1. Discrete Fourier Transform
+ 1. Discrete Fourier Transform
  
 We compute the discrete fourier transform by consider a window of size $N$ at each time $k$ as follows:
  
 $$ F_n^k = \sum_{i=0}^{N-1} Y_{k-i} e^{-j\frac{2\pi}{N}ni}, $$
 
-where $F_n^k$ is the $n$ is frequency component at time $k$.
+where $F_n^k$ is the $n$th frequency component at time $k$.
 
 Since the speed observations are real values, we get a symmetric spectrum aroung $N/2$. Hence, we consider the d.c. component or the zero frequency component $F_0^k$, the fundermental frequency component $F_1^k$ and all its harmonics up to $N/2$ as features at time $k$. 
  
 Further, to speed-up the process of computing these features, we utilize a fast-fourier transform algorithm, i.e., Cooley-Tukey algorithm to compute discrete fourier transform, which reduce the number of computations from $\mathcal{O}(N^2)$ to $\mathcal{O}(Nlog(N))$. 
 
-2. Karhunen Lo\'eve Expansion (Eigenvector Transform)
+ 2. Karhunen Lo\'eve Expansion (Eigenvector Transform)
 
 The Karhunen Lo\'eve Expansion (KLE) decompose a time-domain signal into uncorrelated spectral components to highlight its unique frequency domain characteristics. 
 
-Let $Y^k =[Y_{k},Y_{k-1},\dots,Y_{k-N-1}$] be the signal window of size $N$ at time $k$. Consider $\{q_{0},q_{1},\dots,q_{N-1}\}$ to be the eigen vectors of the $N \times N$ autocorrelation matrix corresponding to $Y^k$. Then the KLE of the signal $Y^k$ is given by,
+Let $Y^k =[Y_{k},Y_{k-1},\dots,Y_{k-N-1}]$ be the signal window of size $N$ at time $k$. Consider $\lbrace q_{0},q_{1},\dots,q_{N-1} \rbrase $ to be the eigen vectors of the $N \times N$ autocorrelation matrix corresponding to $Y^k$. Then the KLE of the signal $Y^k$ is given by,
 
 $$ Y^k =\sum_{i=0}^{N-1} q_{i}^{T} Y^k q_{i}.$$
 
