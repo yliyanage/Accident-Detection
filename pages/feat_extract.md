@@ -27,7 +27,7 @@ where $Z_k$ is the feature at time $k$, $Y_k$ is the speed reading at time $k$, 
  
 The below figure shows the extracted time-domain features when N=5, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
 
- ![feat](../images/time_feat.png)
+![feat](../images/time_feat.png)
  
  
 # Frequency-Domain Features
@@ -47,7 +47,7 @@ The below figure shows the extracted time-domain features when N=5, for the acci
 
 2. Karhunen Lo\'eve Expansion (Eigenvector Transform)
 
-   The Karhunen Lo\'eve Expansion (KLE) decompose a time-domain signal into uncorrelated spectral components to highlight its unique frequency domain characteristics.
+   The Karhunen Lo\'eve Expansion (KLE) decomposes a time-domain signal into uncorrelated spectral components to highlight its unique frequency domain characteristics.
 
    Let $Y^k =[Y_{k},Y_{k-1},\dots,Y_{k-N-1}]$ be the signal window of size $N$ at time $k$. Consider $\lbrace q_{0},q_{1},\dots,q_{N-1} \rbrace $ to be the eigen vectors of the $N \times N$ autocorrelation matrix corresponding to $Y^k$. Then the KLE of the signal $Y^k$ is given by,
 
