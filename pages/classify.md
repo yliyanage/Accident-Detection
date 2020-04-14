@@ -7,4 +7,4 @@ title: Classification
 
 _yay_
 
-[Back](../)
+[Go Back](../)
