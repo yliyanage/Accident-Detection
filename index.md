@@ -15,12 +15,12 @@ The goal of this project is to detect accidents in near real–time using inform
 
 [1. Description of Data](./pages/data_descrip.html)
 
-[2. Real-Time Data Collecting and Processing](./pages/data_collect.html)
+[2. Data Collecting and Processing](./pages/data_collect.html)
 
 [3. Feature Extraction](./pages/feat_extract.html)
 
 [4. Feature Selection](./pages/feat_select.html)
 
-[5. Real-Time Classification](./pages/classify.html)
+[5. Classification](./pages/classify.html)
 
 
