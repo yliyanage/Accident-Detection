@@ -15,5 +15,7 @@ Mutual information is a measure of the mutual dependence between the two variabl
 
 In our accident detetecion problem, in order to compute the amount of information that each feature contains to discriminate a time sample between normal traffic versus accident condition, we assign a binary label for each time sample. Specifically, $1$ repesents an accident condition while $0$ represents normal traffic. 
 
+![labels](../images/labels.png)
+
 
 [Go Back](../)
