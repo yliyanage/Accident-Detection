@@ -68,4 +68,4 @@ The below figure shows the extracted time-domain features when $N=5$, for the ac
   	 <img src="../images/kle.png" height="440" width="600">
    </p>
    
-[Back](../)
+[Go Back](../)
