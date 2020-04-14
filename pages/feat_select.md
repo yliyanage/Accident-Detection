@@ -13,7 +13,7 @@ $$ I(X;Y) = \sum_{y \in Y} \sum_{x \in X}  { P(x,y) \log{ \left(\frac{P(x,y)}{P(
 
 Mutual information is a measure of the mutual dependence between the two variables. Specifically, it quantifies the amount of information obtained about one random variable through observing the other random variable. 
 
-In our accident detetecion problem, in order to compute the amount of information that each feature has to discriminate between a normal traffic condition vs a accident condition, we labeled each time samples as 1 or 0, where 1 repesents a accident, while a 0 represents a normal traffic condition. 
+In our accident detetecion problem, in order to compute the amount of information that each feature contains to discriminate a time sample between normal traffic versus accident condition, we assign a binary label for each time sample repesenting an accident (i.e., $1$) and normal traffic (i.e., $0$). 
 
 
 [Go Back](../)
