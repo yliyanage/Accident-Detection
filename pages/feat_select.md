@@ -3,7 +3,7 @@ layout: default
 title: Feature Selection
 ---
 
-In feature selection, our goal is to select the most informative features (out of all extracted time domain and frequency domain features [here.](./feat_extract.html)) for accident detection. 
+In feature selection, our goal is to select the most informative features (out of all extracted time domain and frequency domain features [here](./feat_extract.html)) for accident detection. 
 
 ## Information Theoretic Feature Selection
 
