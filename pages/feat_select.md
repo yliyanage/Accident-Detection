@@ -27,9 +27,9 @@ Then, we compute mutual information between each feature and accident variable.
 
 ### Frequency Domain Features
 
-![MI_time](../images/mi_time.png)
+![MI_time](../images/mi_freq.png)
 
-
+$$ S_0,S_1,S_2,S_3,S_4 = \text{Eigen Transform Cofficients} $$
 
 
 [Go Back](../)
