@@ -17,9 +17,9 @@ In our accident detetecion problem, in order to compute the amount of informatio
 
 ![labels](../images/labels.png)
 
-Hereafter, we call this variable as ''accident variable''.
+Hereafter, we call this variable as the ''accident variable''.
 
-Then, we compute mutual information between each feature and accident variable. 
+Then, we compute mutual information between each feature and the accident variable. 
 
 ### Time Domain Features
 
@@ -36,6 +36,11 @@ Then, we compute mutual information between each feature and accident variable.
 $$ S_0,S_1,S_2,S_3,S_4 : \text{Eigenvector Transform Coefficients} $$
 
 $$ F_0,F_1,F_2 : \text{Discrete Fourier Transform Coefficients} $$
+
+
+We select a subset of most informative features for accident detection based on a threshold (e.g. 0.1) on the mutual information between
+each feature and the accident variable.
+
 
 
 [Go Back](../)
