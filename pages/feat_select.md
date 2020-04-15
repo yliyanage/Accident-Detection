@@ -17,5 +17,8 @@ In our accident detetecion problem, in order to compute the amount of informatio
 
 ![labels](../images/labels.png)
 
+Here after, we call this variable as ''accident variable''
+
+Then, we compute the mutual informatio
 
 [Go Back](../)
