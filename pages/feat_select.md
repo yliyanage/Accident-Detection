@@ -25,5 +25,9 @@ Then, we compute mutual information between each feature and accident variable.
 
 ![MI_time](../images/mi_time.png)
 
+### Frequency Domain Features
+
+
+
 
 [Go Back](../)
