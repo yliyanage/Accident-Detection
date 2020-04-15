@@ -19,8 +19,11 @@ In our accident detetecion problem, in order to compute the amount of informatio
 
 Hereafter, we call this variable as ''accident variable''.
 
-Then, we compute the mutual information of each feature with the accident variable. 
+Then, we compute mutual information between each feature and accident variable. 
 
+### Time Domain Features
+
+![MI_time](../images/mi_time.png)
 
 
 [Go Back](../)
