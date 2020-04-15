@@ -29,7 +29,7 @@ Then, we compute mutual information between each feature and accident variable.
 
 
  <p align="center">
-       <img src="../images/mi_freq.png" height="220" width="600">
+       <img src="../images/mi_freq.png" height="400" width="700">
    </p>
 
 
