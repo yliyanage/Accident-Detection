@@ -13,7 +13,7 @@ This is the final stage of our project. Here our goal is to predict the accident
 6. $F_6$ : Inter Quartile Range
 7. $F_7$ : KLE Coefficient 3
 
-and, we denote accident variable by $\mathcal{A}\in \{0,1\}$.
+and, we denote accident variable by $\mathcal{A}\in \lbrace 0,1\rbrace$.
 
 ## Optimum Classification
 
@@ -28,6 +28,6 @@ $$ J(D_F) = \sum_{i=0}^1 \sum_{j=0}^1 Q_{ij} P( D_F = j, A = i) $$
 
 Thus, our optimization problem is equivalent to finding $D_F$ such that:
 
-$$ \text{minimize}_{D_F}  \qquad J(D_F) $$
+$$ \text{minimize}_{D_F}  \ J(D_F) $$
 
 [Go Back](../)
