@@ -22,10 +22,12 @@ In the interest of predicting the accident variable $\mathcal{A}$ optimally, we 
 * $D_F$ : Decision variable. For example, the event $\{D_F = 1 \}$, represents deciding the current time sample as an accident after observing the feature set $F = \{F_1,\dots,F_7 \}$. 
 * $Q_{ij} \geqslant 0$ : Misclassification cost of deciding $D_F =j$ when $\mathcal{A}=i$, where $i,j \in \{0,1\}$.
 
-Using these quantities, we define a cost function $J(D_F)$, which penalizes the expected cost of decision $D_F$ as follows:
+Using these quantities, we define cost function $J(D_F)$, which penalizes the expected cost of decision $D_F$ as follows:
 
 $$ J(D_F) = \sum_{i=0}^1 \sum_{j=0}^1 Q_{ij} P( D_F = j, A = i) $$
 
+Thus, our optimization problem is equivalent to finding $D_F$ such that:
 
+$$ \text{minimize}_{D_F}  J(D_F) $$
 
 [Go Back](../)
