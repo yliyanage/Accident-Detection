@@ -45,11 +45,11 @@ Here are the 7 selected features by setting the threshold at 0.1.
 <pre>
 1. Mean Absolute Deviation                                                    
 2. Standard deviation               
-3. $F_1$                 
-4. $F_2$  
-5. $S_1$
+3. $$F_1$$                 
+4. $$F_2$$ 
+5. $$S_1$$
 6. Inter Quartile Range
-7. $S_3$
+7. $$S_3$$
 </pre>
 
 
