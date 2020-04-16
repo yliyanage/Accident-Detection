@@ -33,9 +33,9 @@ Then, we compute mutual information between each feature and the accident variab
    </p>
 
 
-$$ S_0,S_1,S_2,S_3,S_4 : \text{Eigenvector Transform Coefficients} $$
+$$ KLE_0,KLE_1,KLE_2,KLE_3,KLE_4 : \text{Eigenvector Transform Coefficients} $$
 
-$$ F_0,F_1,F_2 : \text{Discrete Fourier Transform Coefficients} $$
+$$ DFT_0,DFT_1,DFT_2 : \text{Discrete Fourier Transform Coefficients} $$
 
 
 We select a subset of most informative features (in both time domain and frequency domain) for accident detection based on a threshold on the mutual information between each feature and the accident variable.
@@ -45,12 +45,11 @@ Here are the 7 selected features by setting the threshold at 0.1.
 <pre>
 1. Mean Absolute Deviation                                                    
 2. Standard deviation               
-3. $$F_1$$                 
-4. $$F_2$$ 
-5. $$S_1$$
+3. DFT Coefficient 1                 
+4. DFT Coefficient 2
+5. KLE Coefficient 1
 6. Inter Quartile Range
-7. $$S_3$$
+7. KLE Coefficient 3
 </pre>
-
 
 [Go Back](../)
