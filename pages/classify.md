@@ -3,7 +3,7 @@ layout: default
 title: Classification
 ---
 
-This is the final stage of our project. Here our goal is to predict the accident variable using the 7 selected features. (See [here](./feat_select.html) for details.) For ease of reference, we name these 7 features as follows:
+This is the final stage of our project. Here our goal is to predict the accident variable using the 7 selected features. (See [here](./feat_select.html) for details). For ease of reference, we name these 7 features as follows:
 
 1. $F_1$ : Mean Absolute Deviation                                                    
 2. $F_2$ : Standard deviation               
