@@ -58,8 +58,8 @@ The below figure shows the extracted time-domain features when $N=5$, for the ac
 
    $$ Y^k =\sum_{i=0}^{N-1} q_{i}^{T} Y^k q_{i}.$$
 
-   Thus, signal $Y^k$ is decomposed into $N$ mutually uncorrelated spectral components $\text{KLE}_0^k, \text{KLE}_1^k,
-   \dots,\text{KLE}_{N-1}^k$, where $\text{KLE}_{i}^k= q_{i}^{T} Y^k q_{i}$. These uncorrelated spectral components are called the subspace components of the signal $Y^k$. We consider all these subspace components as features at time $k$.
+   Thus, signal $Y^k$ is decomposed into $N$ mutually uncorrelated spectral components 
+   $\text{KLE}_0^k, \text{KLE}_1^k,\dots,\text{KLE}_{N-1}^k$, where $\text{KLE}_{i}^k= q_{i}^{T} Y^k q_{i}$. These uncorrelated spectral components are called the subspace components of the signal $Y^k$. We consider all these subspace components as features at time $k$.
 
    Note that each eigenvector $q_{i}$ can be viewed as coefficients of a Finite Impulse Response (FIR) digital filter and thus, $S_{i}^k$ is the output of the filter realized by $q_{i}$.
    
