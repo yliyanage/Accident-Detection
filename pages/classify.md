@@ -3,7 +3,7 @@ layout: default
 title: Classification
 ---
 
-This is the final stage of our project. Here our goal is to predict the accident variable using the 7 selected features. (see [here](./feat_select.html) for details.) For ease of reference, we name these 7 features as follows:
+This is the final stage of our project. Here our goal is to predict the accident variable using the 7 selected features. (See [here](./feat_select.html) for details.) For ease of reference, we name these 7 features as follows:
 
 1. $F_1$ : Mean Absolute Deviation                                                    
 2. $F_2$ : Standard deviation               
@@ -17,7 +17,14 @@ and, we denote accident variable by $\mathcal{A}\in \{0,1\}$.
 
 ## Optimum Classification
 
-To optimally predict the accident variable $\mathcal{A}$, we define misclassification cost $Q_{ij}$ representing the cost of selecting $\mathcal{A} =j$ when $\mathcal{A}=i$, where $i,j \in \{0,1\}$.
+In the interest of predicting the accident variable $\mathcal{A}$ optimally, we define the following quantities:
+
+* $D_F$ : Decision variable. For example, the event $\{D_F = 1 \}$, represents deciding the current time sample as an accident after observing the feature set $F = \{F_1,\dots,F_7 \}$. 
+* $Q_{ij} \geqslant 0$ : Misclassification cost of deciding $D_F =j$ when $\mathcal{A}=i$, where $i,j \in \{0,1\}$.
+
+Using these quantities, we define a cost function $J(D_F)$, which penalizes the expected cost of decision $D_F$ as follows:
+
+$$ J(D_F) = \sum_{i=0}^1 \sum_{j=0}^1 Q_{ij} P( D_F = j, A = i) $$
 
 
 
