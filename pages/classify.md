@@ -19,7 +19,7 @@ and, we denote accident variable by $\mathcal{A}\in \{0,1\}$.
 
 In the interest of predicting the accident variable $\mathcal{A}$ optimally, we define the following quantities:
 
-* $D_F$ : Decision variable. For example, the event $\{D_F = 1 \}$, represents deciding the current time sample as an accident after observing the feature set $F = \{F_1,\dots,F_7 \}$. 
+* $D_F$ : Decision variable. For example, the event $\rbrace D_F = 1 \lbrace$, represents deciding the current time sample as an accident after observing the feature set $F = \rbrace F_1,\dots,F_7 \lbrace$. 
 * $Q_{ij} \geqslant 0$ : Misclassification cost of deciding $D_F =j$ when $\mathcal{A}=i$, where $i,j \in \{0,1\}$.
 
 Using these quantities, we define cost function $J(D_F)$, which penalizes the expected cost of decision $D_F$ as follows:
