@@ -17,7 +17,7 @@ and, we denote accident variable by $\mathcal{A}\in \{0,1\}$.
 
 ## Optimum Classification
 
-To optimally predict the accident variable, we define misclassification cost $Q_{ij}$, representing the cost of selecting $\mathcal{A} =j$ when $\mathcal{A}=i$, where $i,j \in \{0,1\}$.
+To optimally predict the accident variable $\mathcal{A}$, we define misclassification cost $Q_{ij}$ representing the cost of selecting $\mathcal{A} =j$ when $\mathcal{A}=i$, where $i,j \in \{0,1\}$.
 
 
 
