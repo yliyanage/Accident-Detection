@@ -28,6 +28,6 @@ $$ J(D_F) = \sum_{i=0}^1 \sum_{j=0}^1 Q_{ij} P( D_F = j, A = i) $$
 
 Thus, our optimization problem is equivalent to finding $D_F$ such that:
 
-$$ \text{minimize}_{D_F}  J(D_F) $$
+$$ \text{minimize}_{D_F}  \qquad J(D_F) $$
 
 [Go Back](../)
