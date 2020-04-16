@@ -60,10 +60,7 @@ The below figure shows the extracted time-domain features when $N=5$, for the ac
 
    Thus, signal $Y^k$ is decomposed into $N$ mutually uncorrelated spectral components 
    
-   $\text{KLE}_0^k, \text{KLE}_1^k$, $\dots, \text{KLE}_{N-1}^k$, 
-   
-   
-   where $\text{KLE}_i^k= q_i^T Y^k q_i$. 
+   $\text{KLE}_0^k, \text{KLE}_1^k,\text{KLE}_{N-1}^k$, where $\text{KLE}_i^k= q_i^T Y^k q_i$. 
    
    These uncorrelated spectral components are called the subspace components of the signal $Y^k$. We consider all these subspace components as features at time $k$.
 
