@@ -38,6 +38,6 @@ Using $\pi$, we rewrite the cost function $J(D_F)$ as follows:
 
 $$ J(D_F) = \sum_{j=0}^1  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big) \mathbb{1}_{ \lbrace D_F=j \rbrace },$$
 
-where $\mathbb{1}_{ \mathcal{A} }$ is the indicator function for event $\mathcal{A}$ (i.e., $\mathbb{1}_{ \mathcal{A} }$  = 1 when $\mathcal{A}$ occurs,  $0$ otherwise).
+where $\mathbb{1}_{A}$ is the indicator function for event $A$ (i.e., $\mathbb{1}_{A}$  = 1 when $A$ occurs,  $0$ otherwise).
 
 [Go Back](../)
