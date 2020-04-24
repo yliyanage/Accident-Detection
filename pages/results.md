@@ -22,9 +22,10 @@ $$
 \begin{align}
 \pi &= P(\mathcal{A} = 0 | F) \\
     &= \frac{P(F|\mathcal{A} = 0 )P(\mathcal{A} = 0 )}{P(F)}\\
-    &= \frac{ \prod_{i} P(F_i|\mathcal{A} = 0 )P(\mathcal{A} = 0 )}{\sum_j \prod_{i} P(F_i|\mathcal{A} =j)}  
+    &= \frac{ \prod_{i} P(F_i|\mathcal{A} = 0 )P(\mathcal{A} = 0 )}{\sum_j \prod_{i} P(F_i|\mathcal{A} =j)},
 \end{align}
 $$
+where the prior probability $P(\mathcal{A} = i)$ is estimated using training data. Finally, we set constant misclassification costs, i.e. $Q_{10} =0.6, Q_{01}=0.4, Q_{00}=0, Q_{11} =0$.
 
 ## Results and Discussion
 
