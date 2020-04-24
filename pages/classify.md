@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Classification
+title: Optimum Classification
 ---
 
 This is the final stage of our project. Here our goal is to predict the accident variable using the 7 selected features. (See [here](./feat_select.html) for details). For ease of reference, we name these 7 features as follows:
