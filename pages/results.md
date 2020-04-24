@@ -12,9 +12,9 @@ During model training, we basically learn conditional probability distributions 
 $$F_i|\mathcal{A}=j \sim \mathcal{N} (\mu_{ij},\sigma^2_{ij})$$ 
 
 During testing, at each time step, we:
-1. extract the set $F$ of selected features, 
-2. compute the sufficient statistic $\pi$, and 
-3. predict the optimum decision $D_{F}^\text{optimum}$.
+1. extract the set $F$ of selected features
+2. compute the sufficient statistic $\pi$
+3. predict the optimum decision $D_{F}^\text{optimum}$
 
 The above three steps are repeated until an accident is detected (i.e., $D_{F}^\text{optimum}$ = 1), at which point an alert is raised, and $D_{F}^\text{optimum}$ is reset to $0$, and the process of extracting features resumes. Note that in step 2, $\pi$ can be computed using conditional probability distributions as follows:
 
