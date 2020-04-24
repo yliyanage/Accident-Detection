@@ -36,6 +36,6 @@ $$ \pi = P (\mathcal{A}=0 | F)$$
 
 Using $\pi$, we rewrite the cost function $J(D_F)$ as follows:
 
-$$ J(D_F) = \sum_{j=0}^1  (Q_{0j} \pi + Q_{1j} (1-\pi)) \text{**1**}_{D_F=j} $$
+$$ J(D_F) = \sum_{j=0}^1  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big) \mathbb{1}_{D_F=j} $$
 
 [Go Back](../)
