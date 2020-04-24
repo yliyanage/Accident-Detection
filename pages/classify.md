@@ -30,11 +30,12 @@ Thus, our optimization problem is equivalent to finding $D_F$ such that:
 
 $$ \text{minimize}_{D_F}  \ J(D_F) $$
 
-In order to solve the aforementioned optimzation, we define a sufficient statistic, which is the *a posteriori probability*
-$\pi$ as follows:
+In order to solve the aforementioned optimzation, we define a sufficient statistic, which is the *a posteriori probability* $\pi$ as follows:
 
 $$ \pi = P (\mathcal{A}=0 | F)$$
 
+Using $\pi$, we rewrite the cost function $J(D_F)$ as follows:
 
+$$ J(D_F) = \sum_{j=0}^1  (Q_{0j} \pi + Q_{1j} (1-\pi)) \text{**1**}_{D_F=j} $$
 
 [Go Back](../)
