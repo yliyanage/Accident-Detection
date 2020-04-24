@@ -38,9 +38,9 @@ $$ \text{KLE}_0, \text{KLE}_1, \text{KLE}_2, \text{KLE}_3, \text{KLE}_4 : \text{
 $$ \text{DFT}_0, \text{DFT}_1, \text{DFT}_2 : \text{Discrete Fourier Transform Coefficients} $$
 
 
-We select a subset of most informative features (in both time domain and frequency domain) for accident detection based on a threshold on the mutual information between each feature and the accident variable.
+We select a subset of most informative features (in both time domain and frequency domain) for accident detection based on a threshold $\alpha$ on the mutual information between each feature and the accident variable.
 
-Here are the 7 selected features by setting the threshold at 0.1.
+Here are the 7 selected features when  $\alpha =0.1$.
 
 <pre>
 1. Mean Absolute Deviation                                                    
