@@ -20,7 +20,7 @@ and, we denote accident variable by $\mathcal{A}\in \lbrace 0,1\rbrace$.
 In the interest of predicting the accident variable $\mathcal{A}$ optimally, we define the following quantities:
 
 * $D_F$ : Decision variable which depends on the feature set $F = \lbrace F_1,\dots,F_7 \rbrace$. For example, the event $\lbrace D_F = 1 \rbrace$, represents assigning the current time sample as an accident after observing the feature set $F = \lbrace F_1,\dots,F_7 \rbrace$. 
-* $Q_{ij} \geqslant 0$ : Misclassification cost of assigning $D_F =j$ when $\mathcal{A}=i$, where $i,j \in \{0,1\}$.
+* $Q_{ij} \geqslant 0$ : Misclassification cost of assigning $D_F =j$ when $\mathcal{A}=i$, where $i,j \in \lbrace 0,1 \rbrace$.
 
 On a more practical note, $0 < Q_{01} < Q{10} $, because miss-detecting an accident is more critical than a false alarm. Next, using the aforementioned quantities we define the cost function $J(D_F)$, which penalizes the expected cost of decision $D_F$ as follows:
 
@@ -30,12 +30,14 @@ Thus, our optimization problem is equivalent to finding $D_F$ such that:
 
 $$ \text{minimize}_{D_F}  \ J(D_F) $$
 
-In order to solve the aforementioned optimzation, we define a sufficient statistic, which is the *a posteriori probability* $\pi$ as follows:
+In order to solve this optimzation, we define a sufficient statistic, which is the *a posteriori probability* $\pi$ as follows:
 
 $$ \pi = P (\mathcal{A}=0 | F)$$
 
 Using $\pi$, we rewrite the cost function $J(D_F)$ as follows:
 
-$$ J(D_F) = \sum_{j=0}^1  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big) \mathbb{1}_{D_F=j} $$
+$$ J(D_F) = \sum_{j=0}^1  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big) \mathbb{1}_{ \lbrace D_F=j \rbrace },$$
+
+where $\mathbb{1}_{ \mathcal{A} }$ is the indicator function for event $\mathcal{A}$ (i.e., $\mathbb{1}_{ \mathcal{A} }$  = 1 when $\mathcal{A}$ occurs,  $0$ otherwise).
 
 [Go Back](../)
