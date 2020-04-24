@@ -40,10 +40,10 @@ $$ J(D_F) = \sum_{j=0}^1  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big) \mathbb{1}_{ \
 
 where $\mathbb{1}_{ \lbrace . \rbrace }$ is the indicator function. Note that $J(D_F)$ has the following lower bound:
 
-$$  J(D_F) \geqslant \min_{j \in \lbrace 0,1 \rbrace} \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big).$$
+$$  J(D_F) \geqslant \min_{j \in \lbrace 0,1 \rbrace} \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big)$$
 
 Thus, the optimum decision $D_F^{\text{optimum}}$ is given by:
 
-$$ D_F^{\text{optimum}}  = \text{argmin}_{j \in \lbrace 0,1 \rbrace}  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big).$$
+$$ D_F^{\text{optimum}}  = \text{argmin}_{j \in \lbrace 0,1 \rbrace}  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big)$$
 
 [Go Back](../)
