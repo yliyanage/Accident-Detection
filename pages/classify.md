@@ -38,14 +38,12 @@ Using $\pi$, we rewrite the cost function $J(D_F)$ as follows:
 
 $$ J(D_F) = \sum_{j=0}^1  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big) \mathbb{1}_{ \lbrace D_F=j \rbrace },$$
 
-where $\mathbb{1}_{ \lbrace A \rbrace }$ is the indicator function for event $\lbrace A \rbrace $ (i.e., $\mathbb{1}_{ \lbrace A \rbrace }=1$ when $\lbrace A \rbrace $ occurs,  $0$ otherwise).
-
-Note that $J(D_F)$ has the following lower bound
+where $\mathbb{1}_{ \lbrace . \rbrace }$ is the indicator function. Note that $J(D_F)$ has the following lower bound:
 
 $$  J(D_F) \geqslant \min_{j \in \lbrace 0,1 \rbrace} \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big).$$
 
-Thus, we the optimum decision $D_F^{\text{optimal}}$ is given by:
+Thus, the optimum decision $D_F^{\text{optimum}}$ is given by:
 
-$$ D_F^{\text{optimal}}  = \argmin_{j \in \lbrace 0,1 \rbrace}  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big).$$
+$$ D_F^{\text{optimum}}  = \text{argmin}_{j \in \lbrace 0,1 \rbrace}  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big).$$
 
 [Go Back](../)
