@@ -30,4 +30,11 @@ Thus, our optimization problem is equivalent to finding $D_F$ such that:
 
 $$ \text{minimize}_{D_F}  \ J(D_F) $$
 
+In order to solve the aforementioned optimzation, we define a sufficient statistic, which is the ``a posteriori probability``
+$\pi$ as follows:
+
+$$ \pi = P (\mathcal{A}=0 | F)$$
+
+
+
 [Go Back](../)
