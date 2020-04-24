@@ -17,9 +17,9 @@ In our accident detetecion problem, in order to compute the amount of informatio
 
 ![labels](../images/labels.png)
 
-Hereafter, we call this variable as the ''accident variable''.
+Hereafter, we call this variable as the ''accident variable'' $\mathcal{A}$.
 
-Then, we compute mutual information between each feature and the accident variable. 
+Then, we compute mutual information between each feature and $\mathcal{A}$. 
 
 ### Time Domain Features
 
