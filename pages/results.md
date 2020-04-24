@@ -38,10 +38,14 @@ Following figure shows the performance of our approach on an example accident ev
 
 We consider probability of false alarm, probability of miss-detection and avarage detection delay as performance measures. 
 
+<center>
+    
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
+
+</center>
 
 [Go Back](../)
 
