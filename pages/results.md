@@ -41,7 +41,7 @@ We consider probability of false alarm (PFA), probability of miss-detection (PMD
     
 |            |  $\alpha=0.1$ |  $\alpha=0.12$ |  $\alpha =0.14$     | Cali. Highway Patrol   |
 |:---------: | :-------------: | :-------------: | :-------------: | :--------------------: |
-|    # selected <br> features    |     7     |      6       |      3        |         N.A.            |
+|    # Selected features    |     7     |      6       |      3        |         N.A.            |
 |   PFA        |      0.0       |      0.0       |      0.0        |         0.0            |
 |   PMD           |      0.0       |      0.0       |      0.05        |         0.0            |
 |   ADD (mins)     |      3.75         |      3.75         |      5.0        |         16.45            |
