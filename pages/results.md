@@ -36,7 +36,12 @@ Following figure shows the performance of our approach on an example accident ev
        <img src="../images/result.png" height="400" width="400">
 </p>
 
-We consider probability of false alarm, probability of miss-detection and avarage detection delay as performance matrices.
+We consider probability of false alarm, probability of miss-detection and avarage detection delay as performance measures. 
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 [Go Back](../)
 
