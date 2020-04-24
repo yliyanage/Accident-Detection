@@ -5,7 +5,7 @@ title: Experiments and Results
 
 ## Experimental Setup
 
-We evaluate our proposed three–stage approach on a real–world dataset. (See [here](./data_collect.html) for details on real-time data collecting process). Specifically, we consider a set of 80 accident events from the event dataset and train our model on random selected 60 events and test on the rest 20 events.
+We evaluate our proposed three–stage approach on a real–world dataset. (See [here](./data_collect.html) for details on real-time data collecting process). Specifically, we consider a set of 80 accident events from the event dataset and train our model on 60 (randomly selected) events and test on the rest 20 events.
 
 During model training, we basically learn conditional probability distributions for all selected features under the assumption that:
 
@@ -28,7 +28,11 @@ $$
 
 ## Results and Discussion
 
+Following figure shows the performance of our approach on an example accident event.
 
+
+
+We consider probability of false alarm, probability of miss-detection and avarage detection delay as performance matrices.
 
 [Go Back](../)
 
