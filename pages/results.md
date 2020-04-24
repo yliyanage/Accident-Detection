@@ -30,9 +30,9 @@ $$
 
 Following figure shows the performance of our approach on an example accident event.
 
- <p align="center">
+<p align="center">
        <img src="../images/result.png" height="400" width="400">
-   </p>
+</p>
 
 We consider probability of false alarm, probability of miss-detection and avarage detection delay as performance matrices.
 
