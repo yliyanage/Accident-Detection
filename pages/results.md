@@ -36,14 +36,15 @@ Following figure shows the performance of our approach on an example accident ev
        <img src="../images/result.png" height="400" width="400">
 </p>
 
-We consider probability of false alarm (PFA), probability of miss-detection (PMD) and avarage detection delay (ADD) as performance measures. 
+We consider probability of false alarm (PFA), probability of miss-detection (PMD) and avarage detection delay (ADD) as performance measures. We
 
     
-| Measure    |  Our Method |  Our Method |  Our Method     | Cali. Highway Patrol   |
+|            |  $\alpha=0.1$ |  $\alpha=0.12$ |  $\alpha =0.14$     | Cali. Highway Patrol   |
 |:---------: | :-------------: | :-------------: | :-------------: | :--------------------: |
+|    # features        |     7     |      6       |      3        |         N.A.            |
 |   PFA        |      0.0       |      0.0       |      0.0        |         0.0            |
-|   PMD           |      0.0       |      0.0       |      0.0        |         0.0            |
-|   ADD (mins)     |      3.75         |      3.75         |      3.75        |         16.45            |
+|   PMD           |      0.0       |      0.0       |      0.05        |         0.0            |
+|   ADD (mins)     |      3.75         |      3.75         |      5.0        |         16.45            |
 
 
 
