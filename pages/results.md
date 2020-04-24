@@ -36,12 +36,12 @@ Following figure shows the performance of our approach on an example accident ev
        <img src="../images/result.png" height="400" width="400">
 </p>
 
-We consider probability of false alarm (PFA), probability of miss-detection (PMD) and avarage detection delay (ADD) as performance measures. We report for three different threshold $\alpha$ values on the mutual information. 
+We consider probability of false alarm (PFA), probability of miss-detection (PMD) and avarage detection delay (ADD) as performance measures. We report results for three different threshold $\alpha$ values on the mutual information. 
 
     
 |            |  $\alpha=0.1$ |  $\alpha=0.12$ |  $\alpha =0.14$     | Cali. Highway Patrol   |
 |:---------: | :-------------: | :-------------: | :-------------: | :--------------------: |
-|    # selected \ features    |     7     |      6       |      3        |         N.A.            |
+|    # selected <br> features    |     7     |      6       |      3        |         N.A.            |
 |   PFA        |      0.0       |      0.0       |      0.0        |         0.0            |
 |   PMD           |      0.0       |      0.0       |      0.05        |         0.0            |
 |   ADD (mins)     |      3.75         |      3.75         |      5.0        |         16.45            |
