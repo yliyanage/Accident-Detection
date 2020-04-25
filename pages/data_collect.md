@@ -1,5 +1,5 @@
 ---
-layout: page1
+layout: default
 title: Real-Time Data Collecting and Processing
 ---
 
