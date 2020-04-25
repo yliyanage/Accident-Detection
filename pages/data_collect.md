@@ -23,7 +23,7 @@ We have collected real-data provided by the California Department of Transportat
   
 
 <details>
-  <summary> Let's see some code! </summary>
+  <summary> **Show Code** </summary>
   
 ```python
 import pandas as pd
