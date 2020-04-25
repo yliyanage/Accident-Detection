@@ -20,9 +20,11 @@ We have collected real-data provided by the California Department of Transportat
   - Reported time of the accident
   - Duration of the accident
   - Accident location
- 
- <details>
-  <summary> <b> Show Code </b> </summary>
+  
+  
+<details>
+  
+<summary> <b> Show Code </b> </summary>
   
 ```python
 import pandas as pd
@@ -65,6 +67,7 @@ for i in range(1,6):
 Event_data = pd.concat(Event_data, axis=0)
 Event_data.to_csv('Event_2020_Jan.csv', encoding='utf-8',index=False)
 ```
+
 </details>
   
 # Data Processing and Visualizing
