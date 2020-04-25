@@ -67,8 +67,6 @@ Event_data = pd.concat(Event_data, axis=0)
 Event_data.to_csv('Event_2020_Jan.csv', encoding='utf-8',index=False)
 ```
 </details>
-
-{::options parse_block_html="false" /}
   
 # Data Processing and Visualizing
 
