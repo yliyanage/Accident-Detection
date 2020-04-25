@@ -78,9 +78,16 @@ During data processing, we utilize a liner interpolation filter to handle missin
   <summary> <b> Show Code </b> </summary>
   
 ```python
-############################ Plot raw speed in a 2d figure  ################################### 
-
 def plot_raw_speed(Speed_data,Event_data,event_id):
+    """
+    Plot raw speed in a 2d figure
+    Args:
+        Speed_data: Speed dataset 
+        Event_data: Event dataset
+        event_id: Unique id of the event that need to be plot
+    Return: 
+        None: Plot raw speed readings corresponding to event defined by "event_id" and save it as .png
+    """ 
     #accident information
     Event_info = Event_data[Event_data['Incident_ID'] == event_id]    
     Acc_time = Event_info.iloc[0,1]
@@ -144,10 +151,17 @@ def plot_raw_speed(Speed_data,Event_data,event_id):
 
     #save figure    
     plt.savefig('Figures/result.png', format='png')
-    
-############################ Plot raw speed in a 3d figure  ################################### 
 
-def D3_plot_raw_speed(Speed_data,Event_data,event_id): 
+def D3_plot_raw_speed(Speed_data,Event_data,event_id):
+    """
+    Plot raw speed in a 3d figure
+    Args:
+        Speed_data: Speed dataset 
+        Event_data: Event dataset
+        event_id: Unique id of the event that need to be plot
+    Return: 
+        None: 3d Plot raw speed readings corresponding to event defined by "event_id" and save it as .png
+    """ 
     #accident information
     Event_info = Event_data[Event_data['Incident_ID'] == event_id]    
     Acc_time = Event_info.iloc[0,1]
