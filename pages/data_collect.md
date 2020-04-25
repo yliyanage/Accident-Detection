@@ -100,12 +100,11 @@ def plot_raw_speed(Speed_data,Event_data,event_id):
     fig = plt.figure(figsize=(10,10))
     ax = fig.add_subplot(1,1,1) 
     
-    for z in range(0,len(Link_IDS)):
-        
-        Link_data = Event_speed[Event_speed['Link_ID']== Link_IDS[z]]
-        Post = Link_data.Postmile.values[0]
+    for z in range(0,len(Link_IDS)): 
     
-                                      
+        #extract sensor speed data
+        Link_data = Event_speed[Event_speed['Link_ID']== Link_IDS[z]]
+        Post = Link_data.Postmile.values[0]                                   
         data = Link_data[['Time','Speed']]
         sorted_data = data.sort_values(['Time'])
         sorted_data1 = sorted_data.set_index(['Time'])   
@@ -122,9 +121,6 @@ def plot_raw_speed(Speed_data,Event_data,event_id):
             plt.plot(interpolated.index,interpolated.Speed,marker=Marker[z-2],linewidth=4,ms=8.0,
                                                      mew = 2.0,label='Abs PM '+str(round(Post,2)))
             
-
-
-    ax.xaxis.set_major_formatter(mdates.DateFormatter('%H:%M'))     
     
     #annotate actual time and reported time
     plt.annotate('Actual Time', xy=((Acc_time- timedelta(minutes= 40)), 5), color='red',
@@ -135,12 +131,9 @@ def plot_raw_speed(Speed_data,Event_data,event_id):
                      xytext=((Acc_time + timedelta(minutes = 10)),5),
                 arrowprops=dict(facecolor='black', shrink=0.01,width=2),fontsize=15)
     plt.axvline(x=Acc_time,color='k',linestyle='--',linewidth=2,label = '')
-    plt.annotate('Detected Time \n (Delay = 15 mins)', xy=((Acc_time- timedelta(minutes= 25)), 10), color = 'green',
-                     xytext=((Acc_time - timedelta(minutes = 17)),15),
-                arrowprops=dict(facecolor='green', shrink=0.01,width=2),fontsize=15)
-    plt.axvline(x=(Acc_time- timedelta(minutes= 25)),color='g',linestyle='--',linewidth=3,label = '')
-    
-    #stylish adjustments in plot    
+
+    #stylish adjustments in plot
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%H:%M'))     
     plt.ylim(2,75)  
     plt.xticks(rotation=30)
     plt.legend(fontsize=15)
@@ -176,10 +169,9 @@ def D3_plot_raw_speed(Speed_data,Event_data,event_id):
     
     for z in range(0,len(Link_IDS)): #get speed reading from all sensors
         
+        #extract sensor speed data
         Link_data = Event_speed[Event_speed['Link_ID']== Link_IDS[z]]
-        Post = Link_data.Postmile.values[0]
-    
-                                      
+        Post = Link_data.Postmile.values[0]                                      
         data = Link_data[['Time','Speed']]
         sorted_data = data.sort_values(['Time'])
         sorted_data1 = sorted_data.set_index(['Time'])   
@@ -197,19 +189,17 @@ def D3_plot_raw_speed(Speed_data,Event_data,event_id):
             ax.plot(index, LK,interpolated.Speed,marker=Marker[z-2],
                                                 linewidth=4,ms=8.0,mew = 2.0)
     
-    
+    #stylish adjustments in plot 
     tick = np.arange(0, len(interpolated.index), 5)
     label = [interpolated.index.time[i] for i in tick]
-    
     ax.xaxis.set_ticks(tick)
-    ax.xaxis.set_ticklabels(label)
-    
+    ax.xaxis.set_ticklabels(label)  
     ax.set_ylabel('Abs PM',fontsize = 17)
     ax.set_xlabel('Time',fontsize = 17)
-    ax.set_zlabel('Speed',fontsize =17)
-    
+    ax.set_zlabel('Speed',fontsize =17)   
     ax.xaxis.labelpad = 20
     ax.yaxis.labelpad = 20
+    
     #save figure
     plt.savefig('Figures/3D_Raw_Speed.png', format='png')
       
