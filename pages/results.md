@@ -129,11 +129,11 @@ Reported_Avg_D = np.mean(Reported_delay)
 #############   Helper-functions used in Training and Testing  ####################
 def Train_event(Speed_data,Event_data,event_id,actual_times,feature,window):
     """
-    Create training data for specified event
+    Create training data for a specified event
     Args:
         Speed_data: Speed dataset 
         Event_data: Event dataset
-        event_id: Unique id of the event that need to be plot
+        event_id: Unique id of the event 
         actual_time: Suspected accident times     
         feature: feature index
         window: rolling window size
@@ -180,11 +180,11 @@ def Train_event(Speed_data,Event_data,event_id,actual_times,feature,window):
 
 def Test_event(Speed_data,Event_data,event_id,actual_times,feature,window):     
     """
-    Create testing data for specified event
+    Create testing data for a specified event
     Args:
         Speed_data: Speed dataset 
         Event_data: Event dataset
-        event_id: Unique id of the event that need to be plot
+        event_id: Unique id of the event 
         actual_time: Suspected accident times     
         feature: feature index
         window: rolling window size
@@ -192,7 +192,7 @@ def Test_event(Speed_data,Event_data,event_id,actual_times,feature,window):
         Feature: a datafram with feature vectors of the event 
         time: datetime array corresponding to the event 
         Acc_time: Actual time of the event
-        Reported time: Reported time Cali. Hughway Petrol
+        Reported time: Reported time by Cali. Highway Petrol
     """ 
     #event information
     Event_info = Event_data[Event_data['Incident_ID'] == event_id]   
