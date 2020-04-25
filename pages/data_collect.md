@@ -24,6 +24,7 @@ We have collected real-data provided by the California Department of Transportat
   
 {::options parse_block_html="true" /}
 <details><summary markdown="span">Let's see some code!</summary>
+  
 ```python
 import pandas as pd
 import datetime
