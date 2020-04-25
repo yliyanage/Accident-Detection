@@ -34,7 +34,7 @@ $$  J(D_F) \geqslant \min_{j \in \lbrace 0,1 \rbrace} \big( Q_{0j} \pi + Q_{1j} 
 
 Thus, the optimum decision $D_F^{\text{optimum}}$ is given by:
 
-$$ D_F^{\text{optimum}}  = \text{argmin}_{j \in \lbrace 0,1 \rbrace} Q_{0j} \pi + Q_{1j} (1-\pi) $$
+$$ D_F^{\text{optimum}}  = \underset{j \in \lbrace 0,1 \rbrace}{\operatorname{argmin}} $$
 
 $$ D_F^{\text{optimum}} = \min_{j \in \lbrace 0,1 \rbrace}  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big) $$
 
