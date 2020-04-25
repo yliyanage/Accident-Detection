@@ -44,7 +44,7 @@ Xtrain = []
 Ytrain = []
 init1 = False
 
-#Generate features to train using first 60 events
+#train using first 60 events
 for i in range(60):    
     init2 = False
     #compute all selected features and stack into a single feature vector
