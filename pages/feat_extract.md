@@ -27,9 +27,9 @@ where $Z_k$ is the feature at time $k$, $Y_k$ is the speed reading at time $k$, 
 <details> <summary> <b> Show Code </b> </summary>
 
 ```python
-def Time_feature(x,feat,window):
+def time_roll_feat(x,feat,window):
     """
-    Compute Time domain Features
+    Compute rolling window time domain features
     Args:
         x: raw speed array 
         feat: feature number
@@ -138,7 +138,7 @@ To plot time domain features, we use the same function that generates the plot o
 ```python
 def FFT(x):
     """
-    Compute Fast Fourier Transform of a window
+    Compute Fast Fourier Transform (FFT) of a window
     Args:
         x: a window of raw speed data 
     Return: 
@@ -148,7 +148,7 @@ def FFT(x):
 
 def KLE(x): 
     """
-    Compute Karhunen Lo'eve Expansion (Eigenvector Transform) of a window
+    Compute Karhunen Lo'eve Expansion (KLE) a.k.a. Eigenvector Transform of a window
     Args:
         x: a window of raw speed data 
     Return: 
@@ -163,9 +163,9 @@ def KLE(x):
 
 
 
-def window_feature(x,feat,window,index):
+def freq_roll_feat(x,feat,window,index):
     """
-    Compute Frequency domain Features: FFT / KLE
+    Compute rolling window frequency domain features: FFT / KLE
     Args:
         x: raw speed array 
         feat: feature name ('kle' or 'fft')
