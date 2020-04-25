@@ -10,7 +10,7 @@ We have collected real-data provided by the California Department of Transportat
 <p align="center">
   <img src="../images/g_map.png" height="400" width="400">
 </p>
-    
+
 1. Speed Dataset:  We have created a big-dataset comprising of 1,446,196 speed readings collected from all 162 sensors.
   - Sampling time = 5 minutes
   - No. of missing samples = 140
@@ -20,8 +20,7 @@ We have collected real-data provided by the California Department of Transportat
   - Duration of the accident
   - Accident location
   
-<details>
-  <summary> <b> Show Code </b> </summary>
+<details> <summary> <b> Show Code </b> </summary>
   
 ```python
 import pandas as pd
@@ -63,6 +62,7 @@ for i in range(1,6):
 #save all event data into a single .csv file
 Event_data = pd.concat(Event_data, axis=0)
 Event_data.to_csv('Event_2020_Jan.csv', encoding='utf-8',index=False)
+
 ```
 </details>
   
@@ -72,8 +72,7 @@ During data processing, we utilize a liner interpolation filter to handle missin
 
 ![Sample Acc](../images/sample_acc.png)
 
-<details>
-  <summary> <b> Show Code </b> </summary>
+<details><summary> <b> Show Code </b> </summary>
   
 ```python
 def plot_raw_speed(Speed_data,Event_data,event_id):
@@ -215,7 +214,7 @@ def D3_plot_raw_speed(Speed_data,Event_data,event_id):
     #save figure
     plt.savefig('Figures/3D_Raw_Speed.png', format='png')
       
- ```
+```
 </details>
 
 In this figure, solid lines represent speed readings from upstream sensors, while dashed lines represents speed readings from downstream sensors.  
