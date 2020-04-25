@@ -22,6 +22,18 @@ We have collected real-data provided by the California Department of Transportat
   - Accident location
   
   
+<details><summary>CLICK ME</summary>
+<p>
+
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
+
 <details>
   <summary> Let's see some code! </summary>
   
