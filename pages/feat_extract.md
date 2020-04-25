@@ -101,9 +101,9 @@ To plot time domain features, we use the same function that generates the plot o
  
    We compute the discrete fourier transform by consider a window of size $N$ at each time $k$ as follows:
 
-   $$ \text{DFT}_n^k = \sum_{i=0}^{N-1} Y_{k-i} e^{-j\frac{2\pi}{N}ni}, $$
+   $$ \text{DFT}_n^k $$
    
-   $$ Y^k =\sum_{i=0}^{N-1} q_{i}^{T} Y^k q_{i}.$$
+   $$ = \sum_{i=0}^{N-1} Y_{k-i} e^{-j\frac{2\pi}{N}ni}, $$
 
    where $\text{DFT}_n^k$ is the $n$th frequency component at time $k$.
 
