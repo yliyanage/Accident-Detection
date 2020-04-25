@@ -24,6 +24,70 @@ $$ Z_k = \frac{\sum_{i=0}^{N-1} Y_{k-i}}{N}, $$
 
 where $Z_k$ is the feature at time $k$, $Y_k$ is the speed reading at time $k$, and $N$ is the window length. 
 
+<details>
+  <summary> <b> Show Code </b> </summary>
+
+```python
+def Time_feature(x,feat,window):
+    """
+    Compute Time domain Features
+    Args:
+        x: Speed data array 
+        feat: feature number
+        window: window length N
+    Return: 
+        Feat: predicted labels 
+    """ 
+    Feat = []
+    
+    for i in range(window-1,len(x)):
+        b = np.array(x[i-window+1:i+1])
+        
+        if feat==1:     #mean         
+            Feat.append(np.mean(b))
+        
+        if feat==2:     #median           
+            Feat.append(np.median(b))
+       
+        if feat==3:      #std
+            Feat.append(np.std(b))
+            
+        if feat==4:      #rms
+            Feat.append(np.sqrt(np.mean(np.power(b,2))))
+            
+        if feat==5:      #energy
+            Feat.append(np.mean(np.power(b,2)))
+            
+        if feat==6:      #IQR    
+            Feat.append(np.percentile(b,75)-np.percentile(b,25))
+
+        if feat==7:      #mean absolute deviation
+            Feat.append(np.mean(np.abs(b - np.mean(b))))
+            
+        if feat==8:      #skewness
+            b = pd.Series(b)
+            d = np.divide((b[2]-b.mean()),b.std())
+            d = np.power(d,3)
+            Feat.append(d)
+
+        if feat==9:      #kurtorsis
+            b = pd.Series(b)
+            d = np.divide((b[2]-b.mean()),b.std())
+            d = np.power(d,4)
+            Feat.append(d)
+        
+        if feat==10:     #mean of maxima
+            a=(argrelextrema(b, np.greater_equal))
+            d = (b[a])
+            Feat.append(np.median(d))
+   
+        if feat== 11:    #mean of minima
+            a=(argrelextrema(b, np.less_equal))
+            d = (b[a])
+            Feat.append(np.median(d))
+    return Feat
+```
+</details>
  
 The below figure shows the extracted time-domain features when $N=5$, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
 
