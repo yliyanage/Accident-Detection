@@ -2,6 +2,7 @@ title: Near Real–Time Freeway Accident Detection Using Speed Data
 description: Yasitha Liyanage, Rahul Kar
 theme: jekyll-theme-cayman
 show_downloads: True
-markdown: kramdown
-kramdown:
-  parse_block_html: true
+markdown: CommonMarkGhPages
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
