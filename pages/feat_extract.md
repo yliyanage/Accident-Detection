@@ -93,7 +93,8 @@ The below figure shows the extracted time-domain features when $N=5$, for the ac
 
 ![feat](../images/time_feat1.png)
  
- 
+To plot time domain features, we use the same function that generates the plot of raw speed readings of an event (see [here](./data_collect.html)), by replacing raw speed array with feature array.  
+
 # Frequency-Domain Features
 
 1. Discrete Fourier Transform
@@ -131,5 +132,8 @@ The below figure shows the extracted time-domain features when $N=5$, for the ac
    <p align="center">
   	 <img src="../images/kle1.png" height="440" width="600">
    </p>
+   
+
+To plot frequency domain features, we use the same function that generates the plot of raw speed readings of an event (see [here](./data_collect.html)), by replacing raw speed array with feature array.  
    
 [Go Back](../)
