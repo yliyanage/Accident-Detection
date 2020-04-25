@@ -74,6 +74,148 @@ During data processing, we utilize a liner interpolation filter to handle missin
 
 ![Sample Acc](../images/sample_acc.png)
 
+<details>
+  <summary> <b> Show Code </b> </summary>
+  
+```python
+############################ Plot raw speed in a 2d figure  ################################### 
+
+def plot_raw_speed(Speed_data,Event_data,event_id):
+    #accident information
+    Event_info = Event_data[Event_data['Incident_ID'] == event_id]    
+    Acc_time = Event_info.iloc[0,1]
+    Acc_place = Event_info.iloc[0,3]
+    
+
+    #extract speed data 1 hour before and after, and within 3 miles range from accident
+    start_t = Acc_time - timedelta(minutes= 80) 
+    end_t = Acc_time + timedelta(minutes=40)      
+    Event_speed =  Speed_data[(Speed_data.Postmile >= Acc_place - 1.5  ) & 
+                              (Speed_data.Postmile <= Acc_place +0.2 ) &
+                          (Speed_data.Time <=  end_t  ) & 
+                          (Speed_data.Time >= start_t)]        
+    Link_IDS = Event_speed['Link_ID'].drop_duplicates().values.tolist()
+    
+    # 2d figure
+    fig = plt.figure(figsize=(10,10))
+    ax = fig.add_subplot(1,1,1) 
+    
+    for z in range(0,len(Link_IDS)):
+        
+        Link_data = Event_speed[Event_speed['Link_ID']== Link_IDS[z]]
+        Post = Link_data.Postmile.values[0]
+    
+                                      
+        data = Link_data[['Time','Speed']]
+        sorted_data = data.sort_values(['Time'])
+        sorted_data1 = sorted_data.set_index(['Time'])   
+        
+        #interpolation filter incase of missing samples
+        resampled_data = sorted_data1.resample('5T').mean()  
+        interpolated = resampled_data.interpolate(method='linear')
+        
+        
+        if Post  > Acc_place: #upstream sensors
+             plt.plot(interpolated.index,interpolated.Speed,'--',linewidth=4,
+                                                      label='Abs PM '+str(round(Post,2)))
+        else:               #downstream sensors
+            plt.plot(interpolated.index,interpolated.Speed,marker=Marker[z-2],linewidth=4,ms=8.0,
+                                                     mew = 2.0,label='Abs PM '+str(round(Post,2)))
+            
+
+
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%H:%M'))     
+    
+    #annotate actual time and reported time
+    plt.annotate('Actual Time', xy=((Acc_time- timedelta(minutes= 40)), 5), color='red',
+                     xytext=((Acc_time - timedelta(minutes = 75)),8),
+                arrowprops=dict(facecolor='red', shrink=0.01,width=2),fontsize=15)  
+    plt.axvline(x=(Acc_time- timedelta(minutes= 40)),color='r',linestyle='--',linewidth=3,label = '')   
+    plt.annotate('Reported Time \n (Delay = 40 mins)', xy=((Acc_time), 3), 
+                     xytext=((Acc_time + timedelta(minutes = 10)),5),
+                arrowprops=dict(facecolor='black', shrink=0.01,width=2),fontsize=15)
+    plt.axvline(x=Acc_time,color='k',linestyle='--',linewidth=2,label = '')
+    plt.annotate('Detected Time \n (Delay = 15 mins)', xy=((Acc_time- timedelta(minutes= 25)), 10), color = 'green',
+                     xytext=((Acc_time - timedelta(minutes = 17)),15),
+                arrowprops=dict(facecolor='green', shrink=0.01,width=2),fontsize=15)
+    plt.axvline(x=(Acc_time- timedelta(minutes= 25)),color='g',linestyle='--',linewidth=3,label = '')
+    
+    #stylish adjustments in plot    
+    plt.ylim(2,75)  
+    plt.xticks(rotation=30)
+    plt.legend(fontsize=15)
+    plt.rcParams['xtick.labelsize'] = 15
+    plt.rcParams['ytick.labelsize'] = 15
+    plt.xlabel('Time',fontsize=20)
+    plt.ylabel('Speed',fontsize=20)
+
+    #save figure    
+    plt.savefig('Figures/result.png', format='png')
+    
+############################ Plot raw speed in a 3d figure  ################################### 
+
+def D3_plot_raw_speed(Speed_data,Event_data,event_id): 
+    #accident information
+    Event_info = Event_data[Event_data['Incident_ID'] == event_id]    
+    Acc_time = Event_info.iloc[0,1]
+    Acc_place = Event_info.iloc[0,3]
+    
+    #extract speed data 1 hour before and after, and within 3 miles range from accident
+    start_t = Acc_time - timedelta(minutes= 60) 
+    end_t = Acc_time + timedelta(minutes=60)       
+    Event_speed =  Speed_data[(Speed_data.Postmile >= Acc_place - 2  ) & 
+                              (Speed_data.Postmile <= Acc_place +1 ) &
+                          (Speed_data.Time <=  end_t  ) & 
+                          (Speed_data.Time >= start_t)]     
+    Link_IDS = Event_speed['Link_ID'].drop_duplicates().values.tolist()
+      
+    
+    #3d figure
+    fig = plt.figure(figsize=(12,12))
+    ax = fig.add_subplot(111, projection='3d')
+    
+    for z in range(0,len(Link_IDS)): #get speed reading from all sensors
+        
+        Link_data = Event_speed[Event_speed['Link_ID']== Link_IDS[z]]
+        Post = Link_data.Postmile.values[0]
+    
+                                      
+        data = Link_data[['Time','Speed']]
+        sorted_data = data.sort_values(['Time'])
+        sorted_data1 = sorted_data.set_index(['Time'])   
+        
+        #interpolation filter incase of missing samples
+        resampled_data = sorted_data1.resample('5T').mean()  
+        interpolated = resampled_data.interpolate(method='linear')
+        
+        index = [i for i in range(len(interpolated.index))]
+        LK = [Post for i in range(len(interpolated.index))]
+        
+        if Post  > Acc_place: #upstream sensors         
+            ax.plot(index, LK,interpolated.Speed,'--', linewidth=4)
+        else:                #downstream sensors 
+            ax.plot(index, LK,interpolated.Speed,marker=Marker[z-2],
+                                                linewidth=4,ms=8.0,mew = 2.0)
+    
+    
+    tick = np.arange(0, len(interpolated.index), 5)
+    label = [interpolated.index.time[i] for i in tick]
+    
+    ax.xaxis.set_ticks(tick)
+    ax.xaxis.set_ticklabels(label)
+    
+    ax.set_ylabel('Abs PM',fontsize = 17)
+    ax.set_xlabel('Time',fontsize = 17)
+    ax.set_zlabel('Speed',fontsize =17)
+    
+    ax.xaxis.labelpad = 20
+    ax.yaxis.labelpad = 20
+    #save figure
+    plt.savefig('Figures/3D_Raw_Speed.png', format='png')
+      
+ ```
+</details>
+
 In this figure, solid lines represent speed readings from upstream sensors, while dashed lines represents speed readings from downstream sensors.  
 
 ![Down Up](../images/down_up.png)
