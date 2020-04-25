@@ -9,9 +9,8 @@ We have collected real-data provided by the California Department of Transportat
 
 <p align="center">
   <img src="../images/g_map.png" height="400" width="400">
- </p>
+</p>
     
-
 1. Speed Dataset:  We have created a big-dataset comprising of 1,446,196 speed readings collected from all 162 sensors.
   - Sampling time = 5 minutes
   - No. of missing samples = 140
@@ -21,7 +20,6 @@ We have collected real-data provided by the California Department of Transportat
   - Duration of the accident
   - Accident location
   
-
 <details>
   <summary> <b> Show Code </b> </summary>
   
