@@ -32,11 +32,11 @@ def Time_feature(x,feat,window):
     """
     Compute Time domain Features
     Args:
-        x: Speed data array 
+        x: raw speed array 
         feat: feature number
         window: window length N
     Return: 
-        Feat: predicted labels 
+        Feat: feature array
     """ 
     Feat = []
     
@@ -132,7 +132,64 @@ To plot time domain features, we use the same function that generates the plot o
    <p align="center">
   	 <img src="../images/kle1.png" height="440" width="600">
    </p>
-   
+
+<details> <summary> <b> Show Code </b> </summary>
+
+```python
+def FFT(x):
+    """
+    Compute Fast Fourier Transform of a window
+    Args:
+        x: a window of raw speed data 
+    Return: 
+        fft: magnitudes of the frequency components
+    """ 
+    return abs(np.fft.rfft(x))
+
+def KLE(x): 
+    """
+    Compute Karhunen Lo'eve Expansion (Eigenvector Transform) of a window
+    Args:
+        x: a window of raw speed data 
+    Return: 
+        klt: subspace components (i.e., the output of eigen transform)
+    """ 
+    corr = np.correlate(x, x, mode='full')
+    auto_corr =  corr[corr.size//2:]
+    corr_mat = toeplitz(auto_corr)
+    eig_mat = np.linalg.eig(corr_mat)[1]   
+    kle = np.matmul(np.transpose(eig_mat),x)             
+    return abs(kle)
+
+
+
+def window_feature(x,feat,window,index):
+    """
+    Compute Frequency domain Features: FFT / KLE
+    Args:
+        x: raw speed array 
+        feat: feature name ('kle' or 'fft')
+        window: window length N
+        index: index of the frequency component (for FFT) / subspace component (for KLE)
+    Return: 
+        Feat: feature array 
+    """ 
+    Feat = []
+    
+    for i in range(window-1,len(x)):
+        b = np.array(x[i-window+1:i+1])
+            
+        if feat=='kle': #KLE expansion features
+            klt = KLT(b)
+            Feat.append(klt[index])
+           
+        if feat=='fft': # FFT features
+            fft = FFT(b)
+            Feat.append(fft[index])        
+    return Feat
+    
+```
+</details>
 
 To plot frequency domain features, we use the same function that generates the plot of raw speed readings of an event (see [here](./data_collect.html)), by replacing raw speed array with feature array.  
    
