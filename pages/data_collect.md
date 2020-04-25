@@ -1,5 +1,5 @@
 ---
-layout: style1
+layout: page1
 title: Real-Time Data Collecting and Processing
 ---
 
