@@ -100,11 +100,9 @@ To plot time domain features, we use the same function that generates the plot o
 1. Discrete Fourier Transform
  
    We compute the discrete fourier transform by consider a window of size $N$ at each time $k$ as follows:
-
-   $$ A $$
    
-   $$ \text{DFT}_n^k = \sum_{i=0}^{N-1} Y_{k-i} e^{-j\frac{2\pi}{N}ni}, $$
-
+   $$ \text{DFT}^k_n = \sum_{i=0}^{N-1} Y_{k-i} e^{-j\frac{2\pi}{N}ni},$$
+   
    where $\text{DFT}_n^k$ is the $n$th frequency component at time $k$.
 
    Since the speed observations are real values, we get a symmetric spectrum aroung $N/2$. Hence, we consider magnitudes of the d.c. component or the zero frequency component $\text{DFT}_0^k$, the fundermental frequency component $\text{DFT}_1^k$ and all its harmonics up to $N/2$ as features at time $k$. 
