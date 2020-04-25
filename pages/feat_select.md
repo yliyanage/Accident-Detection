@@ -25,11 +25,7 @@ Hereafter, we call this variable as the ''accident variable'' $\mathcal{A}$. The
 
 ### Frequency Domain Features
 
-
- <p align="center">
-       <img src="../images/mi_freq.png" height="400" width="700">
-   </p>
-
+<p align="center"> <img src="../images/mi_freq.png" height="400" width="700"> </p>
 
 $$
 \begin{align}
@@ -37,7 +33,6 @@ $$
 \text{DFT}_0, \text{DFT}_1, \text{DFT}_2 &: \text{Discrete Fourier Transform Coefficients} 
 \end{align}
 $$
-
 
 We select a subset of most informative features (in both time domain and frequency domain) for accident detection based on a threshold $\alpha$ on the mutual information between each feature and the accident variable.
 
