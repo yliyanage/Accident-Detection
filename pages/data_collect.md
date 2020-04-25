@@ -29,7 +29,7 @@ import datetime
 new = pd.DataFrame()
 Speed_data = []
 
-#read all 31 files, each file contain speed readings from a single day in Jan 2020
+#read all 31 files, each file contains speed readings from a single day in Jan 2020
 for i in range(1,32): 
     data_xls = pd.read_excel('Speed_data/pems_output-'+str(i)+'.xlsx', index_col=None)
     new = data_xls[['Time','Postmile (Abs)','VDS','AggSpeed', '% Observed']]
@@ -47,7 +47,7 @@ Speed_data.to_csv('Speed_2020_Jan.csv', encoding='utf-8',index=False)
 new = pd.DataFrame()
 Event_data = []
 
-#read all 5 files, each file contain all accident details happended in each week in Jan 2020
+#read all 5 files, each file contains all accident details happended in a week in Jan 2020
 for i in range(1,6):
     
     data_xls = pd.read_excel('Accidents/pems_output-'+str(32+i)+'.xlsx', index_col=None)
