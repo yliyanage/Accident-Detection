@@ -22,7 +22,7 @@ We have collected real-data provided by the California Department of Transportat
   - Accident location
  
  <details>
-  <summary> **Show Code** </summary>
+  <summary> <b> Show Code </b> </summary>
   
 ```python
 import pandas as pd
