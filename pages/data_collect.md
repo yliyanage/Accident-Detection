@@ -21,14 +21,6 @@ We have collected real-data provided by the California Department of Transportat
   - Duration of the accident
   - Accident location
   
-  
-<details><summary markdown="span">Let's see some code!</summary>
-```python
-print('Hello World!')
-```
-Of course, it has to be Hello World, right?
-</details>
-<br/>
 
 <details>
   <summary> Let's see some code! </summary>
