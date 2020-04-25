@@ -30,7 +30,7 @@ where the prior probability $P(\mathcal{A} = i), i \in \lbrace 0,1 \rbrace$ is e
 
 ## Results and Discussion
 
-Following figure shows the performance of our approach on an example accident event.
+Following figure shows the performance of our approach on an example accident event (when $\alpha$ is set to 0.1).
 
 <p align="center">
        <img src="../images/result.png" height="400" width="400">
