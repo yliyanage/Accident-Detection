@@ -27,12 +27,10 @@ Hereafter, we call this variable as the ''accident variable'' $\mathcal{A}$. The
 
 <p align="center"> <img src="../images/mi_freq.png" height="400" width="700"> </p>
 
-$$
-\begin{align}
+$$\begin{aligned}
 \text{KLE}_0, \text{KLE}_1, \text{KLE}_2, \text{KLE}_3, \text{KLE}_4 &: \text{Eigenvector Transform Coefficients} \\
 \text{DFT}_0, \text{DFT}_1, \text{DFT}_2 &: \text{Discrete Fourier Transform Coefficients} 
-\end{align}
-$$
+\end{aligned} $$
 
 We select a subset of most informative features (in both time domain and frequency domain) for accident detection based on a threshold $\alpha$ on the mutual information between each feature and the accident variable.
 
