@@ -22,9 +22,8 @@ We have collected real-data provided by the California Department of Transportat
   - Accident location
   
   
-<details>
-  <summary> Show Code </summary>
-  
+{::options parse_block_html="true" /}
+<details><summary markdown="span">Let's see some code!</summary>
 ```python
 import pandas as pd
 import datetime
@@ -67,6 +66,9 @@ Event_data = pd.concat(Event_data, axis=0)
 Event_data.to_csv('Event_2020_Jan.csv', encoding='utf-8',index=False)
 ```
 </details>
+<br/>
+
+{::options parse_block_html="false" /}
   
 # Data Processing and Visualizing
 
