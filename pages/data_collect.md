@@ -21,6 +21,32 @@ We have collected real-data provided by the California Department of Transportat
   - Duration of the accident
   - Accident location
   
+```python
+import pandas as pd
+import datetime
+
+##############################  Speed Dataset #########################################
+new = pd.DataFrame()
+Speed_data = []
+
+#read all 31 files, each file contain speed readings from a single day in Jan 2020
+for i in range(1,32): 
+    data_xls = pd.read_excel('Speed_data/pems_output-'+str(i)+'.xlsx', index_col=None)
+    new = data_xls[['Time','Postmile (Abs)','VDS','AggSpeed', '% Observed']]
+    new = new.rename(index=str, columns={"Time":"Time","Postmile (Abs)": "Postmile",
+                                         "VDS":"Link_ID","AggSpeed": "Speed","% Observed": "Accuracy"})
+    
+    date = datetime.date(2020,1,i)
+        
+    new['Time'] = pd.to_datetime(date.strftime('%Y-%m-%d:') + new['Time'], format='%Y-%m-%d:%H:%M')
+
+    Speed_data.append(new)
+
+#save all speed readings into a single .csv file
+Speed_data = pd.concat(Speed_data, axis=0)
+Speed_data.to_csv('Speed_2020_Jan.csv', encoding='utf-8',index=False)
+```
+  
 
 
 # Data Processing and Visualizing
