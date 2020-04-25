@@ -70,6 +70,47 @@ $$\text{DFT}_0, \text{DFT}_1, \text{DFT}_2 : \text{Discrete Fourier Transform Co
 
 We select a subset of most informative features (in both time domain and frequency domain) for accident detection based on a threshold $\alpha$ on the mutual information between each feature and the accident variable.
 
+<details> <summary> <b> Show Code </b> </summary>
+  
+```python
+def mi_bar_plot(mi,feat_name):  
+    """
+    Bar plot of mutual information between features and accident variable
+    Args:
+        mi: mutual information array
+        feat_name: feature names
+    Return: 
+        None: plot and save a bar plot of mutual information array
+    """    
+    fig = plt.figure(figsize=(18,8))
+    plt.bar(range(len(mi)),mi)    
+    plt.xticks(range(11),feat_name, color='orange', rotation=45, fontweight='bold',
+                               fontsize='17', horizontalalignment='right')
+    
+    #plot threshold at 0.1
+    plt.axhline(y=0.1,color='r',linestyle='--',linewidth=3,label = '')
+    
+    #stylish adjustments
+    plt.rcParams['xtick.labelsize'] = 17
+    plt.rcParams['ytick.labelsize'] = 17
+    plt.ylabel('Mutual Information',fontweight='bold',fontsize=20)
+    
+    #save the figure as .png
+    plt.savefig('Figures/mi.png', format='png',bbox_inches='tight')
+
+#time domain features bar plot 
+feature_name =['Mean','Median','STD','RMS','Energy','IQR','Mean AD','Skewness',
+                   'Kurtosis','Mean of Max','Mean of Min']
+mi_bar_plot(mi_time,feat_name)
+
+#frequency domain features bar plot 
+feature_name =['KLE$_0$','KLE$_1$','KLE$_2$','KLE$_3$','KLE$_4$','DFT$_0$'
+                                   ,'DFT$_1$','DFT$_2$']
+mi_bar_plot(mi_freq,feat_name)
+
+```
+</details>
+
 Here are the 7 selected features when  $\alpha =0.1$.
 
 <pre>
