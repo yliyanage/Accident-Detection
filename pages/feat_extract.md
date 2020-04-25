@@ -24,8 +24,7 @@ $$ Z_k = \frac{\sum_{i=0}^{N-1} Y_{k-i}}{N}, $$
 
 where $Z_k$ is the feature at time $k$, $Y_k$ is the speed reading at time $k$, and $N$ is the window length. 
 
-<details>
-  <summary> <b> Show Code </b> </summary>
+<details> <summary> <b> Show Code </b> </summary>
 
 ```python
 def Time_feature(x,feat,window):
@@ -86,6 +85,7 @@ def Time_feature(x,feat,window):
             d = (b[a])
             Feat.append(np.median(d))
     return Feat
+    
 ```
 </details>
  
@@ -93,7 +93,7 @@ The below figure shows the extracted time-domain features when $N=5$, for the ac
 
 ![feat](../images/time_feat1.png)
  
-To plot time domain features, we use the same function that generates the plot of raw speed readings of an event (see [here](./data_collect.html)), by replacing raw speed array with feature array.  
+To plot time domain features, we use the same function that generates the plot of raw speed readings of an event (see [here.](./data_collect.html)), by replacing raw speed array with feature array.  
 
 # Frequency-Domain Features
 
@@ -102,6 +102,8 @@ To plot time domain features, we use the same function that generates the plot o
    We compute the discrete fourier transform by consider a window of size $N$ at each time $k$ as follows:
 
    $$ \text{DFT}_n^k = \sum_{i=0}^{N-1} Y_{k-i} e^{-j\frac{2\pi}{N}ni}, $$
+   
+   $$ Y^k =\sum_{i=0}^{N-1} q_{i}^{T} Y^k q_{i}.$$
 
    where $\text{DFT}_n^k$ is the $n$th frequency component at time $k$.
 
