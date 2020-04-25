@@ -19,6 +19,44 @@ In our accident detetecion problem, in order to compute the amount of informatio
 
 Hereafter, we call this variable as the ''accident variable'' $\mathcal{A}$. Then, we compute mutual information between each feature and $\mathcal{A}$. 
 
+<details> <summary> <b> Show Code </b> </summary>
+  
+```python
+from sklearn.metrics import adjusted_mutual_info_score
+
+def quantize_fspace(feat,bins): 
+    """
+    Quantize feature array
+    Args:
+        feat: feature array
+        bins: quantization levels
+    Return: 
+        q_feat: quantized feature array
+    """ 
+    min_r = np.floor(min(feat))
+    max_r = np.ceil(max(feat))
+    Edges = np.linspace(min_r, max_r, num=bins+1)
+    q_feat = np.digitize(feat,bins=Edges)       
+    return q_feat
+
+
+def mutual_info(feat,label,bins):
+    """
+    Compute mutual information with accident variable
+    Args:
+        feat: feature array
+        label: accident variable
+        bins:  
+    Return: 
+        mi = mutual information
+    """ 
+    q_feat = quantize_fspace(feat,bins) #quantize the feature array
+    mi = adjusted_mutual_info_score(q_feat,label)
+    return mi
+    
+```
+</details>
+
 ### Time Domain Features
 
 ![MI_time](../images/mi_time.png)
