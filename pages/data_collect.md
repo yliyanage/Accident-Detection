@@ -22,7 +22,11 @@ We have collected real-data provided by the California Department of Transportat
   - Accident location
   
 
-<details><summary markdown="span">Let's see some code!</summary>
+$ echo -e "<details><summary markdown='span'>Collapsed Block\n</summary>\n\n## Header\n</details>" | kramdown --parse-block-html
+
+<details>
+   <summary>Collapsed Block
+</summary>
   
 ```python
 import pandas as pd
