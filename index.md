@@ -13,15 +13,21 @@ The goal of this project is to detect accidents in near real–time using inform
 
 ![Overview](./images/overview1.png)
 
-[1. Description of Data](./pages/data_descrip.html)
+[1. Literature Review](./pages/review.html)
 
-[2. Data Collecting and Processing](./pages/data_collect.html)
+[2. Description of Data](./pages/data_descrip.html)
 
-[3. Feature Extraction](./pages/feat_extract.html)
+[3. Data Collecting and Processing](./pages/data_collect.html)
 
-[4. Feature Selection](./pages/feat_select.html)
+[4. Feature Extraction](./pages/feat_extract.html)
 
-[5. Optimum Classification](./pages/classify.html)
+[5. Feature Selection](./pages/feat_select.html)
 
-[6. Experiments and Results](./pages/results.html)
+[6. Optimum Classification](./pages/classify.html)
+
+[7. Experiments and Results](./pages/results.html)
+
+
+# Conclusion
+
 
