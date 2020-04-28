@@ -5,7 +5,7 @@ title: Real-Time Data Collecting and Processing
 
 # Data Collecting
 
-We have collected real-data provided by the California Department of Transportation, and  the California Highway Patrol, during the month of January 2020 in North direction of the I-405 freeway in the Los Angeles County. 
+We have collected real-data provided by the California Department of Transportation[^1], and  the California Highway Patrol[^2], during the month of January 2020 in North direction of the I-405 freeway in the Los Angeles County. 
 
 <p align="center"><img src="../images/g_map.png" height="400" width="400"> </p>
 
@@ -219,5 +219,8 @@ def D3_plot_raw_speed(Speed_data,Event_data,event_id):
 In this figure, solid lines represent speed readings from upstream sensors, while dashed lines represents speed readings from downstream sensors.  
 
 ![Down Up](../images/down_up.png)
+
+[^1]: California Department of Transportation, “Caltrans,”  Available at: [https://dot.ca.gov/](https://dot.ca.gov/)
+[^2]: California Highway Patrol, “CHP,” Available at: [https://www.chp.ca.gov/home](https://www.chp.ca.gov/home)
 
 [Go Back](../)
