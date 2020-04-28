@@ -3,7 +3,7 @@ layout: default
 title: Description of Data
 ---
 
-The data utilized in this study comprise freeway traffic data collected in real–time. Specifically, we have access to two sources of data: i) speed readings of loop sensors from several freeways covering a total of 41,236 miles in California provided by the California Department of Transportation, and ii) reported accidents along the same freeways provide by California Highway Patrol.
+The data utilized in this study comprise freeway traffic data collected in real–time. Specifically, we have access to two sources of data: i) speed readings of loop sensors from several freeways covering a total of 41,236 miles in California provided by the California Department of Transportation [^1], and ii) reported accidents along the same freeways provide by California Highway Patrol [^2].
 
 ## Speed Data
 Sensors are located approximately every 0.5 miles along the freeway in both North and South
@@ -18,5 +18,7 @@ Details of accidents include the start time of the accident, the duration, a des
 
 ![Accidents Details](../images/accidents.png)
 
+[^1]: California Department of Transportation, “Caltrans,”  Available at: [https://dot.ca.gov/](https://dot.ca.gov/)
+[^2]: California Highway Patrol, “CHP,” Available at: [https://www.chp.ca.gov/home](https://www.chp.ca.gov/home)
 
 [Go Back](../)
