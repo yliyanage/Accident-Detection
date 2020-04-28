@@ -26,7 +26,7 @@ $$ \pi = P (\mathcal{A}=0 | F)$$
 
 Using $\pi$, we rewrite the cost function $J(D_F)$ as follows:
 
-$$ J(D_F) = \sum_{j=0}^1  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big) \mathbb{1}_{ \lbrace D_F=j \rbrace },$$
+$$ J(D_F) = \mathbb{E} \Big \lbrace \sum_{j=0}^1  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big) \mathbb{1}_{ \lbrace D_F=j \rbrace } \Big \rbrace,$$
 
 where $\mathbb{1}_{ \lbrace . \rbrace }$ is the indicator function. Note that $J(D_F)$ has the following lower bound:
 
