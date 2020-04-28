@@ -13,6 +13,7 @@ We have collected real-data provided by the California Department of Transportat
    * Sampling time = 5 minutes 
    * No. of missing samples = 140
 
+
 2. Event Dataset:  We have created a dataset comprising details from all 1163 accidents happened. Details include:
    * Reported time of the accident 
    * Duration of the accident 
