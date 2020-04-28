@@ -18,13 +18,7 @@ During testing, at each time step, we:
 
 The above three steps are repeated until an accident is detected (i.e., $D_{F}^\text{optimum}$ = 1), at which point an alert is raised, and the process of extracting features resumes. Note that in step 2, $\pi$ can be computed using conditional probability distributions as follows:
 
-$$
-\begin{align}
-\pi &= P(\mathcal{A} = 0 | F) \\
-    &= \frac{P(F|\mathcal{A} = 0 )P(\mathcal{A} = 0 )}{P(F)}\\
-    &= \frac{ \prod_{i} P(F_i|\mathcal{A} = 0 )P(\mathcal{A} = 0 )}{\sum_j \prod_{i} P(F_i|\mathcal{A} =j)},
-\end{align}
-$$
+$$ \pi = P(\mathcal{A} = 0 | F) = \frac{P(F|\mathcal{A} = 0 )P(\mathcal{A} = 0 )}{P(F)} = \frac{ \prod_{i} P(F_i|\mathcal{A} = 0 )P(\mathcal{A} = 0 )}{\sum_j \prod_{i} P(F_i|\mathcal{A} =j)}, $$
 
 where the prior probability $P(\mathcal{A} = i), i \in \lbrace 0,1 \rbrace$ is estimated using training data. Finally, we set constant misclassification costs, i.e. $Q_{10} =0.6, Q_{01}=0.4, Q_{00}=0, Q_{11} =0$.
 
