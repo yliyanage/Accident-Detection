@@ -7,7 +7,7 @@ In feature selection, our goal is to select a subset of most informative feature
 
 ## Information Theoretic Feature Selection
 
-### Mutual Information
+### Mutual Information [^1]
 
 $$ I(X;Y) = \sum_{y \in Y} \sum_{x \in X}  { P(x,y) \log{ \left(\frac{P(x,y)}{P(x)P(y)} \right) }} $$
 
@@ -122,5 +122,7 @@ Here are the 7 selected features when  $\alpha =0.1$.
 6. Inter Quartile Range
 7. KLE Coefficient 3
 </pre>
+
+[^1]: C. E. Shannon, “A mathematical theory of communication,” Bell system technical journal, vol. 27, no. 3, pp. 379–423, 1948.
 
 [Go Back](../)
