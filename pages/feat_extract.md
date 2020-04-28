@@ -97,7 +97,7 @@ To plot time domain features, we use the same function that generates the plot o
 
 # Frequency-Domain Features
 
-1. Discrete Fourier Transform
+1. Discrete Fourier Transform [^1]
  
    We compute the discrete fourier transform by consider a window of size $N$ at each time $k$ as follows:
    
@@ -107,7 +107,7 @@ To plot time domain features, we use the same function that generates the plot o
 
    Since the speed observations are real values, we get a symmetric spectrum aroung $N/2$. Hence, we consider magnitudes of the d.c. component or the zero frequency component $\text{DFT}_0^k$, the fundermental frequency component $\text{DFT}_1^k$ and all its harmonics up to $N/2$ as features at time $k$. 
 
-   Further, to speed-up the process of computing these features, we utilize a fast-fourier transform algorithm, i.e., Cooley-Tukey algorithm to compute discrete fourier transform, which reduce the number of computations from $\mathcal{O}(N^2)$ to $\mathcal{O}(Nlog(N))$. 
+   Further, to speed-up the process of computing these features, we utilize a fast-fourier transform algorithm, i.e., Cooley-Tukey algorithm to compute discrete fourier transform, which reduce the number of computations from $\mathcal{O}(N^2)$ to $\mathcal{O}(Nlog(N))$ [^1]. 
    
    The below figure shows the extracted frequency components (magnitudes) when $N=5$, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
 
@@ -115,7 +115,7 @@ To plot time domain features, we use the same function that generates the plot o
        <img src="../images/dft1.png" height="220" width="600">
    </p>
 
-2. Karhunen Lo\'eve Expansion (Eigenvector Transform)
+2. Karhunen Lo\'eve Expansion (Eigenvector Transform) [^2]
 
    The Karhunen Lo\'eve Expansion (KLE) decomposes a time-domain signal into uncorrelated spectral components to highlight its unique frequency domain characteristics.
 
@@ -193,4 +193,8 @@ def freq_roll_feat(x,feat,window,index):
 
 To plot frequency domain features, we use the same function that generates the plot of raw speed readings of an event (see [here](./data_collect.html)), by replacing raw speed array with feature array.  
    
+[^1]: Oppenheim, Alan V., John R. Buck, and Ronald W. Schafer. Discrete-time signal processing. Vol. 2. Upper Saddle River, NJ: Prentice Hall, 2001.
+
+[^2]: Ghanem, Roger G., and Pol D. Spanos. Stochastic finite elements: a spectral approach. Courier Corporation, 2003.
+
 [Go Back](../)
