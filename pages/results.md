@@ -242,6 +242,7 @@ Following figure shows the performance of our approach on an example accident ev
 
 We consider probability of false alarm (PFA), probability of miss-detection (PMD) and average detection delay (ADD) as performance measures. Unless specified, we report results for $N=5$ and $\alpha = 0.12$.
 
+
 ## Effect of the Threshold on the Mutual Information
 
 Here, we analyze the effect of the threshold $\alpha$ on the Mutual information on our proposed approach. Specifically, we report results for three different $\alpha$ values. 
@@ -254,10 +255,9 @@ Here, we analyze the effect of the threshold $\alpha$ on the Mutual information 
 |   PMD           |      0.0       |      0.0       |      0.05        |         0.0            |
 |   ADD (mins)     |      3.75         |      3.75         |      5.0        |         16.45            |
 
-Key Observations: 
-* Intutively, number of selected features reduce when $\alpha$ is set to a high value. 
+### Key Observations: 
+* Intutively, number of selected features decrease when $\alpha$ is set to a high value. 
 * Achives the same performance using only 6 features instead of using 7 features.
-
 
 ## Effect of the Rolling Window Size
 
@@ -270,6 +270,9 @@ Here, we study the behavior of our proposed approach for varying rolling window 
 |   PFA        |      0.0       |      0.0       |      0.30        |         0.0            |
 |   PMD           |      0.0       |      0.0       |      0.05        |         0.0            |
 |   ADD (mins)     |      6.80         |      3.75         |      2.31        |         16.45            |
+
+### Key observations:
+*
 
 
 [Go Back](../)
