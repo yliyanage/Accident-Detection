@@ -234,13 +234,17 @@ def Test_event(Speed_data,Event_data,event_id,actual_times,feature,window):
 
 ## Results and Discussion
 
-Following figure shows the performance of our approach on an example accident event (when $\alpha$ is set to 0.1).
+Following figure shows the performance of our approach on an example accident event when rolling window size $N=5$ and the threshold on the mutual information $\alpha = 0.1$.
 
 <p align="center">
        <img src="../images/result.png" height="400" width="400">
 </p>
 
-We consider probability of false alarm (PFA), probability of miss-detection (PMD) and avarage detection delay (ADD) as performance measures. We report results for three different threshold $\alpha$ values on the mutual information. 
+We consider probability of false alarm (PFA), probability of miss-detection (PMD) and average detection delay (ADD) as performance measures.
+
+## Effect of the threshold on the Mutual information
+
+We set the rolling window size $N=5$ and we report results for three different threshold $\alpha$ values on the mutual information. 
 
     
 |            |  $\alpha=0.10$ |  $\alpha=0.12$ |  $\alpha =0.14$     | Cali. Highway Patrol   |
@@ -251,8 +255,12 @@ We consider probability of false alarm (PFA), probability of miss-detection (PMD
 |   ADD (mins)     |      3.75         |      3.75         |      5.0        |         16.45            |
 
 
+## Effect of the threshold on the Mutual information
+
+We report results for three different $N$ values, i.e., the rolling window size. 
+
     
-|            |  $T=3$ |  $T=5$ |  $T=7$     | Cali. Highway Patrol   |
+|            |  $N=3$ |  $N=5$ |  $N=7$     | Cali. Highway Patrol   |
 |:---------: | :-------------: | :-------------: | :-------------: | :--------------------: |
 |    # Selected features    |     5     |      6       |      5        |         N.A.            |
 |   PFA        |      0.0       |      0.0       |      0.30        |         0.0            |
