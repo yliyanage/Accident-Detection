@@ -67,7 +67,7 @@ Event_data.to_csv('Event_2020_Jan.csv', encoding='utf-8',index=False)
   
 # Data Processing and Visualizing
 
-During data processing, we utilize a liner interpolation filter to handle missing samples.  The below figure shows speed data from an accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. 
+During data processing, we utilize a linear interpolation filter to handle missing samples.  The below figure shows speed data from an accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. 
 
 ![Sample Acc](../images/sample_acc.png)
 
