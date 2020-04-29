@@ -254,6 +254,10 @@ Here, we analyze the effect of the threshold $\alpha$ on the Mutual information 
 |   PMD           |      0.0       |      0.0       |      0.05        |         0.0            |
 |   ADD (mins)     |      3.75         |      3.75         |      5.0        |         16.45            |
 
+Key Observations: 
+* Intutively, number of selected features reduce when $\alpha$ is set to a high value. 
+* Achives the same performance using only 6 features instead of using 7 features.
+
 
 ## Effect of the Rolling Window Size
 
