@@ -234,17 +234,17 @@ def Test_event(Speed_data,Event_data,event_id,actual_times,feature,window):
 
 ## Results and Discussion
 
-Following figure shows the performance of our approach on an example accident event when rolling window size $N=5$ and the threshold on the mutual information $\alpha = 0.1$.
+Following figure shows the performance of our approach on an example accident event when rolling window size $N=5$ and the threshold on the mutual information $\alpha = 0.12$.
 
 <p align="center">
        <img src="../images/result.png" height="400" width="400">
 </p>
 
-We consider probability of false alarm (PFA), probability of miss-detection (PMD) and average detection delay (ADD) as performance measures.
+We consider probability of false alarm (PFA), probability of miss-detection (PMD) and average detection delay (ADD) as performance measures. Unless specified, we report results for $N=5$ and $\alpha = 0.12$.
 
-## Effect of the threshold on the Mutual information
+## Effect of the Threshold on the Mutual Information
 
-We set the rolling window size $N=5$ and we report results for three different threshold $\alpha$ values on the mutual information. 
+Here, we analyze the effect of the threshold $\alpha$ on the Mutual information on our proposed approach. Specifically, we report results for three different $\alpha$ values. 
 
     
 |            |  $\alpha=0.10$ |  $\alpha=0.12$ |  $\alpha =0.14$     | Cali. Highway Patrol   |
@@ -255,9 +255,9 @@ We set the rolling window size $N=5$ and we report results for three different t
 |   ADD (mins)     |      3.75         |      3.75         |      5.0        |         16.45            |
 
 
-## Effect of the threshold on the Mutual information
+## Effect of the Rolling Window Size
 
-We report results for three different $N$ values, i.e., the rolling window size. 
+Here, we study the behavior of our proposed approach for varying rolling window sizes $N$. Specifically, we report results for three different $N$ values. 
 
     
 |            |  $N=3$ |  $N=5$ |  $N=7$     | Cali. Highway Patrol   |
