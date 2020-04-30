@@ -91,10 +91,10 @@ def plot_raw_speed(Speed_data,Event_data,event_id):
     
 
     #extract speed data 1 hour before and after, and within 3 miles range from accident
-    start_t = Acc_time - timedelta(minutes= 80) 
-    end_t = Acc_time + timedelta(minutes=40)      
-    Event_speed =  Speed_data[(Speed_data.Postmile >= Acc_place - 1.5  ) & 
-                              (Speed_data.Postmile <= Acc_place +0.2 ) &
+    start_t = Acc_time - timedelta(minutes= 60) 
+    end_t = Acc_time + timedelta(minutes=60)      
+    Event_speed =  Speed_data[(Speed_data.Postmile >= Acc_place - 2  ) & 
+                              (Speed_data.Postmile <= Acc_place + 1 ) &
                           (Speed_data.Time <=  end_t  ) & 
                           (Speed_data.Time >= start_t)]        
     Link_IDS = Event_speed['Link_ID'].drop_duplicates().values.tolist()
@@ -167,7 +167,7 @@ def D3_plot_raw_speed(Speed_data,Event_data,event_id):
     start_t = Acc_time - timedelta(minutes= 60) 
     end_t = Acc_time + timedelta(minutes=60)       
     Event_speed =  Speed_data[(Speed_data.Postmile >= Acc_place - 2  ) & 
-                              (Speed_data.Postmile <= Acc_place +1 ) &
+                              (Speed_data.Postmile <= Acc_place + 1 ) &
                           (Speed_data.Time <=  end_t  ) & 
                           (Speed_data.Time >= start_t)]     
     Link_IDS = Event_speed['Link_ID'].drop_duplicates().values.tolist()
