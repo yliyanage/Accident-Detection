@@ -249,7 +249,7 @@ Here, we study the behavior of our proposed approach for varying rolling window 
     
 |            |  $N=3$ |  $N=5$ |  $N=7$     | Cali. Highway Patrol   |
 |:---------: | :-------------: | :-------------: | :-------------: | :--------------------: |
-|    # Selected features    |     5     |      6       |      5        |         N.A.            |
+|    # Selected features    |     5     |      6       |      5        |         N.A            |
 |   PFA        |      0.0       |      0.0       |      0.30        |         N.A            |
 |   PMD           |      0.0       |      0.0       |      0.05        |         N.A            |
 |   ADD (mins)     |      6.80         |      3.75         |      2.31        |         16.45            |
