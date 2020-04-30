@@ -240,7 +240,7 @@ Following figure shows the performance of our approach on an example accident ev
        <img src="../images/result.png" height="400" width="400">
 </p>
 
-We consider probability of false alarm (PFA), probability of miss-detection (PMD) and average detection delay (ADD) as performance measures. As the baseline, we consider the reported times by California Highway Patrol.
+We consider probability of false alarm (PFA), probability of miss-detection (PMD) and average detection delay (ADD) as performance measures. As the baseline, we consider reported times by California Highway Patrol.
 
 ## Effect of the Rolling Window Size
 
@@ -251,7 +251,7 @@ Here, we study the behavior of our proposed approach for varying rolling window 
 |:---------: | :-------------: | :-------------: | :-------------: | :--------------------: |
 |    # Selected features    |     5     |      6       |      5        |         N.A.            |
 |   PFA        |      0.0       |      0.0       |      0.30        |         N.A            |
-|   PMD           |      0.0       |      0.0       |      0.05        |         A.A            |
+|   PMD           |      0.0       |      0.0       |      0.05        |         N.A            |
 |   ADD (mins)     |      6.80         |      3.75         |      2.31        |         16.45            |
 
 ### Key observations:
