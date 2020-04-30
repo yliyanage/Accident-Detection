@@ -35,8 +35,10 @@ The goal of this project is to detect accidents in near real–time using inform
   1. Feature Extraction: Extracted both time domain and frequency domain features.
   2. Feature Selection: Selected a subset of highly correlated features with the accident variable.
   3. Optimum Classification: Defined an optimization in terms of the Bayes risk associated with the classification decision. The optimum solution was derived.
-* Evaluation results showed that our proposed method achieve improvement of up to 77.2% in average detection delay compared to reported accident times by California Highway Patrol.
-
+* Evaluation results showed that our proposed method achieves an improvement of up to 77.2% in average detection delay compared to reported accident times by California Highway Patrol.
+* Possible extensions:
+  1. In this study, we consider on detecting accidents as a binary variable. Instead, can be extended to detect the level of severity once an accident occurs.
+  2. We assume features to be independent. Considering both spatial and temporal dependencies amoung features would definitely be an interesting area for future work.
 
 [^1]: Nationa Safety Council, “NSC Motor Vehicle Fatality Estimates,” 2019, Available at: [https://injuryfacts.nsc.org/motor-vehicle/overview/preliminary-estimates/](https://injuryfacts.nsc.org/motor-vehicle/overview/preliminary-estimates/)
 
