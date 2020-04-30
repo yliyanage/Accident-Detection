@@ -18,7 +18,9 @@ Details of accidents include the start time of the accident, the duration, a des
 
 ![Accidents Details](../images/accidents.png)
 
-[^1]: California Department of Transportation, “Caltrans,”  Available at: [https://dot.ca.gov/](https://dot.ca.gov/)
-[^2]: California Highway Patrol, “CHP,” Available at: [https://www.chp.ca.gov/home](https://www.chp.ca.gov/home)
-
 [Go Back](../)
+
+### References
+[^1]: California Department of Transportation, “Caltrans,”  Available at: [https://dot.ca.gov/](https://dot.ca.gov/)
+
+[^2]: California Highway Patrol, “CHP,” Available at: [https://www.chp.ca.gov/home](https://www.chp.ca.gov/home)
