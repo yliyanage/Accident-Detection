@@ -34,7 +34,7 @@ The goal of this project is to detect accidents in near real–time using inform
 * We proposed a three stage approach to accurately and timely detect freeway accidents based on speed data. 
   1. Feature Extraction: Extracted both time domain and frequency domain features.
   2. Feature Selection: Selected a subset of highly correlated features with the accident variable.
-  3. Optimum Classification: Defined an optimization in terms of the Bayes risk associated with the classification decision. The optimum solution was derived.
+  3. Optimum Classification: Defined an optimization interms of the Bayes risk associated with the classification decision. The optimum solution was derived.
 * Evaluation results showed that our proposed method achieves an improvement of up to 77.2% in average detection delay compared to reported accident times by California Highway Patrol.
 * Possible extensions:
   1. In this study, we consider on detecting accidents as a binary variable. Instead, can be extended to detect the level of severity once an accident occurs.
