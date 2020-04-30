@@ -7,6 +7,10 @@ Despite its importance, research on accident detection in real–time is lacking
 known model of traffic variables [^2]. On the other hand, approaches based on sound, video, or image features [^3],[^4],[^5],[^6] have typically targeted intersections. Nonetheless, the performance of these methods are highly affected by unfavourale weather conditions such as snowfall, rainfall and fog [^7]. Methods relying on data collected from mobile phone sensors (e.g., accelerometer) [^8],[^9] suffer from high false alarm rates despite achieving high accuracy overall [^10], whereas social networks and media platforms based traffic accident detection methods [^11],[^12] result in considerable amount of detection delays in decision.
 
 
+[Go Back](../)
+
+### References
+
 [^1]: L. Canzian, U. Demiryurek, and M. Van Der Schaar, “Collision Detection by Networked Sensors,” IEEE Transactions on Signal and Information Processing over Networks, vol. 2, pp. 1–15, March 2016.
 
 [^2]: K. Zhang and M. A. Taylor, “Effective arterial road incident detection: a Bayesian network based algorithm,” Transportation Research Part C: Emerging Technologies, vol. 14, no. 6, pp. 403–417, 2006.
@@ -33,4 +37,3 @@ Detection at Road Intersections,” in IEEE Intelligent Transportation Systems C
 [^12]: F. Atefeh and W. Khreich, “A survey of techniques for event detection in twitter,” Computational Intelligence, vol. 31, no. 1, pp. 132–164, 2015.
 
 
-[Go Back](../)
