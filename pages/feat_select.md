@@ -123,6 +123,7 @@ Here are the 7 selected features when  $\alpha =0.1$.
 7. KLE Coefficient 3
 </pre>
 
+[Next](../pages/classify.html)
 
 [Go Back](../)
 
