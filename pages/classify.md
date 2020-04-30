@@ -36,4 +36,6 @@ Thus, the optimum decision $D_F^{\text{optimum}}$ is given by:
 
 $$ D_F^{\text{optimum}} =  \underset{j \in \lbrace 0,1 \rbrace}{\operatorname{argmin}}  \big( Q_{0j} \pi + Q_{1j} (1-\pi) \big) $$
 
+[Next](../pages/results.html)
+
 [Go Back](../)
