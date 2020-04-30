@@ -40,7 +40,7 @@ The goal of this project is to detect accidents in near real–time using inform
   2. We assume features to be independent conditioned on the accident variable. Considering both spatial and temporal dependencies amoung features would definitely be an interesting area for future work.
   
 ## Acknowledgements
-We would like to thank [Dr. Hany Elgala](https://www.albany.edu/~HE895353/), [Monette Khadr](https://www.albany.edu/~HE895353/monette.html) for thier valuable comments and [Dr. Daphney-Stavroula Zois](https://www.albany.edu/~dz973423/) for giving access to real-time speed data provided by the California Department of Transportation.
+We would like to thank [Dr. Hany Elgala](https://www.albany.edu/~HE895353/), [Monette Khadr](https://www.albany.edu/~HE895353/monette.html) for their valuable comments and [Dr. Daphney-Stavroula Zois](https://www.albany.edu/~dz973423/) for giving access to real-time speed data provided by the California Department of Transportation.
 
 ### References
 [^1]: Nationa Safety Council, “NSC Motor Vehicle Fatality Estimates,” 2019, Available at: [https://injuryfacts.nsc.org/motor-vehicle/overview/preliminary-estimates/](https://injuryfacts.nsc.org/motor-vehicle/overview/preliminary-estimates/)
