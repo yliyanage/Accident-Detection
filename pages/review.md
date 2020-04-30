@@ -6,6 +6,7 @@ title: Literature Review
 Despite its importance, research on accident detection in real–time is lacking. Specifically, existing accident detection methods using speed data assert that sensors can communicate with each other [^1], incompatible with the current transportation system, and assumes a
 known model of traffic variables [^2]. On the other hand, approaches based on sound, video, or image features [^3],[^4],[^5],[^6] have typically targeted intersections. Nonetheless, the performance of these methods are highly affected by unfavourale weather conditions such as snowfall, rainfall and fog [^7]. Methods relying on data collected from mobile phone sensors (e.g., accelerometer) [^8],[^9] suffer from high false alarm rates despite achieving high accuracy overall [^10], whereas social networks and media platforms based traffic accident detection methods [^11],[^12] result in considerable amount of detection delays in decision.
 
+[Next](../pages/data_descrip.html)
 
 [Go Back](../)
 
