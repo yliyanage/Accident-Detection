@@ -193,8 +193,9 @@ def freq_roll_feat(x,feat,window,index):
 
 To plot frequency domain features, we use the same function that generates the plot of raw speed readings of an event (see [here](./data_collect.html)), by replacing raw speed array with feature array.  
    
+[Go Back](../)
+
+### References
 [^1]: Oppenheim, Alan V., John R. Buck, and Ronald W. Schafer. Discrete-time signal processing. Vol. 2. Upper Saddle River, NJ: Prentice Hall, 2001.
 
 [^2]: Ghanem, Roger G., and Pol D. Spanos. Stochastic finite elements: a spectral approach. Courier Corporation, 2003.
-
-[Go Back](../)
