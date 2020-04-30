@@ -40,6 +40,7 @@ The goal of this project is to detect accidents in near real–time using inform
   1. In this study, we consider on detecting accidents as a binary variable. Instead, can be extended to detect the level of severity once an accident occurs.
   2. We assume features to be independent. Considering both spatial and temporal dependencies amoung features would definitely be an interesting area for future work.
 
+### References
 [^1]: Nationa Safety Council, “NSC Motor Vehicle Fatality Estimates,” 2019, Available at: [https://injuryfacts.nsc.org/motor-vehicle/overview/preliminary-estimates/](https://injuryfacts.nsc.org/motor-vehicle/overview/preliminary-estimates/)
 
 [^2]: Texas Transportation Institute, “2019 Urban Mobility Report,” 2019, [Online]. Available at: [https://static.tti.tamu.edu/tti.tamu.edu/documents/mobility-report-2019.pdf](https://static.tti.tamu.edu/tti.tamu.edu/documents/mobility-report-2019.pdf)
