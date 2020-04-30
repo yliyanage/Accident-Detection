@@ -256,8 +256,8 @@ Here, we study the behavior of our proposed approach for varying rolling window 
 
 ### Key observations:
 * Average detection delay reduces when $N$ is set to a high value, but for the cost of false alrams and miss-detections. 
-* Wide window sizes can capture more information in raw speed profile, thus results in low delay in detection.
-* In contrast, short window lengths are susceptible for noise, results in high delay in detection. 
+* Wide windows can capture more information in raw speed profile, thus results in short delays in detection.
+* In contrast, short windows are susceptible for noise, hence results in long delays in detection. 
 
 From here onwards, unless specified, we report results for $N=5$, since according to above table, our proposed approach achieves the best tradeoff between ADD and PFA, for this value.
 
