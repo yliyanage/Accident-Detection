@@ -193,6 +193,8 @@ def freq_roll_feat(x,feat,window,index):
 
 To plot frequency domain features, we use the same function that generates the plot of raw speed readings of an event (see [here](./data_collect.html)), by replacing raw speed array with feature array.  
    
+[Next](../pages/feat_select.html)
+
 [Go Back](../)
 
 ### References
