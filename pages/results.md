@@ -242,6 +242,22 @@ Following figure shows the performance of our approach on an example accident ev
 
 We consider probability of false alarm (PFA), probability of miss-detection (PMD) and average detection delay (ADD) as performance measures. As the baseline, we consider reported times by California Highway Patrol.
 
+## Effect of the Threshold on the Mutual Information
+
+Here, we analyze the effect of the threshold $\alpha$ on the Mutual information on our proposed approach. Specifically, we report results for three different $\alpha$ values. 
+
+    
+|            |  $\alpha=0.10$ |  $\alpha=0.12$ |  $\alpha =0.14$     | Cali. Highway Patrol   |
+|:---------: | :-------------: | :-------------: | :-------------: | :--------------------: |
+|    # Selected features    |     7     |      6       |      3        |         N.A.            |
+|   PFA        |      0.0       |      0.0       |      0.0        |         N.A.            |
+|   PMD           |      0.0       |      0.0       |      0.05        |         N.A.            |
+|   ADD (mins)     |      3.75         |      3.75         |      5.0        |         16.45            |
+
+### Key Observations: 
+* Intutively, the number of selected features decrease when $\alpha$ is set to a high value. 
+* Achieves the same best performance using only 6 features instead of using 7 features. Hence, from here onwards, $\alpha$ is set to 0.12.
+
 ## Effect of the Rolling Window Size
 
 Here, we study the behavior of our proposed approach for varying rolling window sizes $N$. Specifically, we report results for three different $N$ values. 
@@ -258,24 +274,6 @@ Here, we study the behavior of our proposed approach for varying rolling window 
 * Average detection delay reduces when $N$ is set to a high value, but for the cost of false alrams and miss-detections. 
 * Wide windows can capture more information in raw speed profile, thus results in short delays in detection.
 * In contrast, short windows are susceptible for noise, hence results in long delays in detection. 
-
-From here onwards, unless specified, we report results for $N=5$, since according to above table, our proposed approach achieves the best tradeoff between ADD and PFA, for this value.
-
-## Effect of the Threshold on the Mutual Information
-
-Here, we analyze the effect of the threshold $\alpha$ on the Mutual information on our proposed approach. Specifically, we report results for three different $\alpha$ values. 
-
-    
-|            |  $\alpha=0.10$ |  $\alpha=0.12$ |  $\alpha =0.14$     | Cali. Highway Patrol   |
-|:---------: | :-------------: | :-------------: | :-------------: | :--------------------: |
-|    # Selected features    |     7     |      6       |      3        |         N.A.            |
-|   PFA        |      0.0       |      0.0       |      0.0        |         N.A.            |
-|   PMD           |      0.0       |      0.0       |      0.05        |         N.A.            |
-|   ADD (mins)     |      3.75         |      3.75         |      5.0        |         16.45            |
-
-### Key Observations: 
-* Intutively, the number of selected features decrease when $\alpha$ is set to a high value. 
-* Achieves the same best performance using only 6 features instead of using 7 features.
 
 Thus, the best performance is achived when $N=5$ and $\alpha = 0.12$. For this setting, the proposed approach achieves 77.2% reduction in average detection delay compared to California Highway Patrol. 
 
