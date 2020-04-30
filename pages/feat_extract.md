@@ -125,7 +125,8 @@ To plot time domain features, we use the same function that generates the plot o
 
    Thus, signal $Y^k$ is decomposed into $N$ mutually uncorrelated spectral components $\text{KLE}_0^k, \text{KLE}_1^k, \dots$, where $\text{KLE}_i^k= q_i^T Y^k q_i$. These uncorrelated spectral components are called the subspace components of the signal $Y^k$. We consider all these subspace components as features at time $k$.
 
-   Note that each eigenvector $q_{i}$ can be viewed as coefficients of a Finite Impulse Response (FIR) digital filter and thus, $\text{KLE}_i^k$ is the output of the filter realized by $q_{i}$.
+   Note that each eigenvector $q_{i}$ can be viewed as coefficients of a Finite Impulse Response (FIR) digital filter and thus, $\text{KLE}_i^k$ 
+   is the output of the filter realized by $q_{i}$.
    
    The below figure shows the extracted subspace components when $N=5$, for the accident reported on absolute postmile (Abs PM) 13.6 at 2:44pm on January 1st, 2020. See the coressponding raw speed readings [here.](./data_collect.html)
  
