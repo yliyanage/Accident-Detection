@@ -234,7 +234,7 @@ def Test_event(Speed_data,Event_data,event_id,actual_times,feature,window):
 
 ## Results and Discussion
 
-Following figure shows the performance of our approach on an example accident event when rolling window size $N=5$ and the threshold on the mutual information $\alpha = 0.12$.
+Following figure shows the performance of our approach on an example accident event when the rolling window size (i.e., $N$,) is set to 5, and the threshold $\alpha$ on the mutual information is 0.10.
 
 <p align="center">
        <img src="../images/result.png" height="400" width="400">
