@@ -220,7 +220,11 @@ In this figure, solid lines represent speed readings from upstream sensors, whil
 
 ![Down Up](../images/down_up.png)
 
+[Go Back](../)
+
+### References
 [^1]: California Department of Transportation, “Caltrans,”  Available at: [https://dot.ca.gov/](https://dot.ca.gov/)
+
 [^2]: California Highway Patrol, “CHP,” Available at: [https://www.chp.ca.gov/home](https://www.chp.ca.gov/home)
 
-[Go Back](../)
+
