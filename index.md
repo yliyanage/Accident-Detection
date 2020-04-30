@@ -32,9 +32,9 @@ The goal of this project is to detect accidents in near real–time using inform
 
 # Conclusion
 * We proposed a three stage approach to accurately and timely detect freeway accidents based on speed data. 
-  I. Feature Extraction: Extracted both time domain and frequency domain features
-  II. Feature Selection: Selected a subset of highly correlated features with the accident variable
-  III. Optimum Classification: Defined an optimization in terms of the Bayes risk associated with the classification decision. The optimum solution was derived
+  1. Feature Extraction: Extracted both time domain and frequency domain features
+  2. Feature Selection: Selected a subset of highly correlated features with the accident variable
+  3. Optimum Classification: Defined an optimization in terms of the Bayes risk associated with the classification decision. The optimum solution was derived
 
 
 [^1]: Nationa Safety Council, “NSC Motor Vehicle Fatality Estimates,” 2019, Available at: [https://injuryfacts.nsc.org/motor-vehicle/overview/preliminary-estimates/](https://injuryfacts.nsc.org/motor-vehicle/overview/preliminary-estimates/)
