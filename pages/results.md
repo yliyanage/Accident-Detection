@@ -240,7 +240,7 @@ Following figure shows the performance of our approach on an example accident ev
        <img src="../images/result.png" height="400" width="400">
 </p>
 
-We consider probability of false alarm (PFA), probability of miss-detection (PMD) and average detection delay (ADD) as performance measures. 
+We consider probability of false alarm (PFA), probability of miss-detection (PMD) and average detection delay (ADD) as performance measures. As the baseline, we consider the reported times by California Highway Patrol.
 
 ## Effect of the Rolling Window Size
 
@@ -250,8 +250,8 @@ Here, we study the behavior of our proposed approach for varying rolling window 
 |            |  $N=3$ |  $N=5$ |  $N=7$     | Cali. Highway Patrol   |
 |:---------: | :-------------: | :-------------: | :-------------: | :--------------------: |
 |    # Selected features    |     5     |      6       |      5        |         N.A.            |
-|   PFA        |      0.0       |      0.0       |      0.30        |         0.0            |
-|   PMD           |      0.0       |      0.0       |      0.05        |         0.0            |
+|   PFA        |      0.0       |      0.0       |      0.30        |         N.A            |
+|   PMD           |      0.0       |      0.0       |      0.05        |         A.A            |
 |   ADD (mins)     |      6.80         |      3.75         |      2.31        |         16.45            |
 
 ### Key observations:
@@ -269,15 +269,15 @@ Here, we analyze the effect of the threshold $\alpha$ on the Mutual information 
 |            |  $\alpha=0.10$ |  $\alpha=0.12$ |  $\alpha =0.14$     | Cali. Highway Patrol   |
 |:---------: | :-------------: | :-------------: | :-------------: | :--------------------: |
 |    # Selected features    |     7     |      6       |      3        |         N.A.            |
-|   PFA        |      0.0       |      0.0       |      0.0        |         0.0            |
-|   PMD           |      0.0       |      0.0       |      0.05        |         0.0            |
+|   PFA        |      0.0       |      0.0       |      0.0        |         N.A.            |
+|   PMD           |      0.0       |      0.0       |      0.05        |         N.A.            |
 |   ADD (mins)     |      3.75         |      3.75         |      5.0        |         16.45            |
 
 ### Key Observations: 
 * Intutively, the number of selected features decrease when $\alpha$ is set to a high value. 
 * Achieves the same best performance using only 6 features instead of using 7 features.
 
-Thus, the best performance is achived when $N=5$ and $\alpha = 0.12$. For this setting, the proposed approach achieves 77.2% reduction in detection delay compare to California Highway Patrol. 
+Thus, the best performance is achived when $N=5$ and $\alpha = 0.12$. For this setting, the proposed approach achieves 77.2% reduction in average detection delay compare to the reported times by California Highway Patrol. 
 
 [Go Back](../)
 
