@@ -277,7 +277,7 @@ Here, we analyze the effect of the threshold $\alpha$ on the Mutual information 
 * Intutively, the number of selected features decrease when $\alpha$ is set to a high value. 
 * Achieves the same best performance using only 6 features instead of using 7 features.
 
-Thus, the best performance is achived when $N=5$ and $\alpha = 0.12$. For this setting, the proposed approach achieves 77.2% reduction in average detection delay compare to the reported times by California Highway Patrol. 
+Thus, the best performance is achived when $N=5$ and $\alpha = 0.12$. For this setting, the proposed approach achieves 77.2% reduction in average detection delay compared to California Highway Patrol. 
 
 [Go Back](../)
 
