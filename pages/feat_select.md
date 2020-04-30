@@ -123,6 +123,9 @@ Here are the 7 selected features when  $\alpha =0.1$.
 7. KLE Coefficient 3
 </pre>
 
-[^1]: C. E. Shannon, “A mathematical theory of communication,” Bell system technical journal, vol. 27, no. 3, pp. 379–423, 1948.
 
 [Go Back](../)
+
+### References
+[^1]: C. E. Shannon, “A mathematical theory of communication,” Bell system technical journal, vol. 27, no. 3, pp. 379–423, 1948.
+
