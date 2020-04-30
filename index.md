@@ -1,6 +1,5 @@
 ---
 layout: home
-image: ./images/background.png
 title: Near Real–Time Freeway Accident Detection Using Speed Data
 ---
 
